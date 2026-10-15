@@ -52,6 +52,15 @@ module.exports = {
         display: ['var(--font-cabinet)', 'var(--font-manrope)', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
+      fontWeight: {
+        300: '300',
+        400: '400',
+        500: '500',
+        600: '600',
+        700: '700',
+        800: '800',
+        900: '900',
+      },
       fontSize: {
         'hero-xl': ['clamp(3.5rem, 9vw, 10rem)', { lineHeight: '0.85', letterSpacing: '-0.04em' }],
         'hero-lg': ['clamp(2.5rem, 6vw, 7rem)', { lineHeight: '0.88', letterSpacing: '-0.03em' }],

@@ -20,6 +20,7 @@
   --ring: #1D6AE5;
   --radius: 0.75rem;
   --font-sans: var(--font-manrope), sans-serif;
+  --font-cabinet: var(--font-manrope);
   --font-display: var(--font-cabinet), sans-serif;
   --nav-dark: #07101F;
 }

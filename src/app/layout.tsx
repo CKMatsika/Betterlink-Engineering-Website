@@ -1,21 +1,14 @@
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
-import { Manrope } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import '../styles/tailwind.css';
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+// Manrope variable font, self-hosted (latin subset) so the app no longer
+// fetches from Google Fonts at build/runtime. A single woff2 covers 200–800.
+const manrope = localFont({
+  src: [{ path: './fonts/manrope-latin.woff2', weight: '200 800', style: 'normal' }],
   variable: '--font-manrope',
-  display: 'swap',
-});
-
-// Cabinet Grotesk via local or fallback to Manrope for display
-const cabinet = Manrope({
-  subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-cabinet',
   display: 'swap',
 });
 
@@ -65,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${cabinet.variable}`}>
+      <html lang="en" className={manrope.variable}>
       <body className={manrope.className}>
         {children}
 </body>
