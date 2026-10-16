@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MiningServices from './components/MiningServices';
 import MiningEquipment from './components/MiningEquipment';
+import MiningBoilerTrack from './components/MiningBoilerTrack';
+import MiningHeroSlideshow from './components/MiningHeroSlideshow';
 import MiningProcess from './components/MiningProcess';
 import MiningCTA from './components/MiningCTA';
 
@@ -176,7 +178,8 @@ export default function MiningPage() {
       <main id="main-content" className="bg-[#07101F]">
         {/* ── Hero ── */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
-          <div className="absolute inset-0 grid-lines-bg opacity-40" />
+          <MiningHeroSlideshow />
+          <div className="absolute inset-0 grid-lines-bg opacity-15" />
           <div className="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full bg-[#E87B1E]/10 blur-[120px] pointer-events-none" />
           <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[#B40001]/8 blur-[100px] pointer-events-none" />
 
@@ -325,6 +328,7 @@ export default function MiningPage() {
         <MiningServices />
         <MiningEquipment />
         <MiningProcess />
+        <MiningBoilerTrack />
 
         {/* ── Who We Are ── */}
         <section className="border-t border-white/8 max-w-7xl mx-auto px-6 lg:px-10 py-24">
