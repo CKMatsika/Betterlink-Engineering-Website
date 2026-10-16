@@ -280,6 +280,16 @@ export default function MiningPage() {
                 Zimbabwe&apos;s major mining provinces, ensuring rapid response times and solutions
                 engineered for local conditions.
               </p>
+
+              <Link
+                href="/mining/about"
+                className="inline-flex items-center gap-2 mt-8 text-[#E87B1E] text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:gap-3"
+              >
+                More About the Division
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
 
             {/* Capability bars */}

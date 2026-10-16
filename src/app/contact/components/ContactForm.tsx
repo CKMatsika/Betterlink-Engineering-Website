@@ -51,10 +51,20 @@ const initialForm: FormData = {
   estimatedTimeline: '',
 };
 
+const requiredFields: (keyof FormData)[] = [
+  'fullName',
+  'organisation',
+  'email',
+  'serviceRequired',
+  'projectDescription',
+];
+
 export default function ContactForm() {
   const [form, setForm] = useState<FormData>(initialForm);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [honeypot, setHoneypot] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -64,11 +74,40 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
+
+    const missing = requiredFields.filter((field) => !form[field].trim());
+    if (missing.length > 0) {
+      setError('Please complete all required fields marked with * before submitting.');
+      return;
+    }
+
     setSubmitting(true);
-    // Mock submission — connect to backend/email service here
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, companyWebsite: honeypot }),
+      });
+      const result = (await response.json().catch(() => ({}))) as {
+        ok?: boolean;
+        error?: string;
+      };
+
+      if (!response.ok || !result.ok) {
+        setError(result.error || 'Something went wrong. Please try again.');
+        setSubmitting(false);
+        return;
+      }
+
+      setSubmitting(false);
+      setSubmitted(true);
+    } catch {
+      setSubmitting(false);
+      setError(
+        'We could not reach the server. Please check your connection and try again, or email info@betterlinkengineering.co.zw.'
+      );
+    }
   };
 
   if (submitted) {
@@ -109,6 +148,20 @@ export default function ContactForm() {
       </p>
 
       <form onSubmit={handleSubmit} noValidate aria-label="Project enquiry form">
+        {/* Honeypot — hidden from real users, catches automated submissions */}
+        <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+          <label htmlFor="companyWebsite">Company website</label>
+          <input
+            id="companyWebsite"
+            name="companyWebsite"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
+
         {/* Row 1: Full Name + Organisation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
           <div>
@@ -281,6 +334,15 @@ export default function ContactForm() {
         </div>
 
         {/* Submit */}
+        {error && (
+          <div
+            role="alert"
+            className="mb-5 rounded-lg border px-4 py-3 text-sm font-600"
+            style={{ borderColor: '#FCA5A5', backgroundColor: '#FEF2F2', color: '#B91C1C' }}
+          >
+            {error}
+          </div>
+        )}
         <button
           type="submit"
           disabled={submitting}

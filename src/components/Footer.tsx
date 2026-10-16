@@ -1,19 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
-import Icon from '@/components/ui/AppIcon';
 
 const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
+  { label: 'Mining Division', href: '/mining' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Privacy', href: '#' },
-  { label: 'Terms', href: '#' },
-];
-
-const socialLinks = [
-  { label: 'LinkedIn', icon: 'GlobeAltIcon', href: '#' },
-  { label: 'Twitter', icon: 'ChatBubbleLeftIcon', href: '#' },
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
 ];
 
 export default function Footer() {
@@ -43,19 +39,11 @@ export default function Footer() {
             ))}
           </nav>
 
-          {/* Social + Copyright */}
+          {/* Copyright */}
           <div className="flex items-center gap-4">
-            {socialLinks.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
-                className="text-muted-foreground hover:text-accent transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-              >
-                <Icon name={s.icon as any} size={18} />
-              </a>
-            ))}
-            <span className="text-sm font-500 text-muted-foreground">© 2026</span>
+            <span className="text-sm font-500 text-muted-foreground">
+              © 2026 Betterlink Engineering
+            </span>
           </div>
         </div>
 
