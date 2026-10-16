@@ -75,8 +75,10 @@ export default function Header() {
             aria-label="Betterlink Industries Home"
           >
             <AppLogo
-              size={36}
-              className="transition-transform duration-300 group-hover:scale-105"
+              src="/assets/images/betterlink-logo.jpg"
+              width={30}
+              height={46}
+              className="rounded-md transition-transform duration-300 group-hover:scale-105"
             />
             <div className="flex flex-col">
               <span className="font-display text-sm font-800 text-white leading-tight tracking-tight">
@@ -130,7 +132,12 @@ export default function Header() {
         >
           <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between w-full">
             <Link href="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-              <AppLogo size={36} />
+              <AppLogo
+                src="/assets/images/betterlink-logo.jpg"
+                width={30}
+                height={46}
+                className="rounded-md"
+              />
               <div className="flex flex-col">
                 <span className="font-display text-sm font-800 text-white leading-tight">
                   Betterlink
