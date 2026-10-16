@@ -21,18 +21,16 @@ export default function MiningCTA() {
         </div>
 
         <h2 className="font-display text-4xl lg:text-6xl font-800 text-white leading-tight tracking-tight mb-6">
-          Gold &amp; Chrome Wash Plants ·{' '}
-          <span className="text-[#E87B1E]">Trommels</span> · Custom Mining Equipment
+          Gold &amp; Chrome Wash Plants · <span className="text-[#E87B1E]">Trommels</span> · Custom
+          Mining Equipment
         </h2>
 
         <p className="text-white/50 text-lg leading-relaxed mb-4 max-w-2xl mx-auto">
-          Tailored solutions for Zimbabwe&apos;s small and medium scale miners.
-          Contact our engineering team today to discuss your boiler or processing plant requirements.
+          Tailored solutions for Zimbabwe&apos;s small and medium scale miners. Contact our
+          engineering team today to discuss your boiler or processing plant requirements.
         </p>
 
-        <p className="text-white/30 text-sm mb-12">
-          www.betterlinkengineering.co.zw
-        </p>
+        <p className="text-white/30 text-sm mb-12">www.betterlinkengineering.co.zw</p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -41,14 +39,17 @@ export default function MiningCTA() {
             className="inline-flex items-center justify-center gap-2 px-10 py-5 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(232,123,30,0.5)]"
           >
             Get a Quotation Today
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </Link>
-          <Link
-            href="/contact"
-            className="btn-outline-white text-[0.75rem] justify-center"
-          >
+          <Link href="/contact" className="btn-outline-white text-[0.75rem] justify-center">
             Discuss Your Project
           </Link>
         </div>

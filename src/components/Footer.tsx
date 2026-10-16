@@ -21,13 +21,20 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <AppLogo size={32} />
             <div className="flex flex-col">
-              <span className="font-display text-sm font-800 text-foreground leading-tight">Betterlink</span>
-              <span className="text-[0.6rem] font-700 tracking-[0.2em] text-muted-foreground uppercase">Engineering</span>
+              <span className="font-display text-sm font-800 text-foreground leading-tight">
+                Betterlink
+              </span>
+              <span className="text-[0.6rem] font-700 tracking-[0.2em] text-muted-foreground uppercase">
+                Engineering
+              </span>
             </div>
           </div>
 
           {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3" aria-label="Footer navigation">
+          <nav
+            className="flex flex-wrap justify-center gap-x-8 gap-y-3"
+            aria-label="Footer navigation"
+          >
             {footerLinks.map((link) => (
               <Link
                 key={link.href + link.label}
@@ -52,7 +59,10 @@ export default function Footer() {
             Engineering Technology That Solves Real Business Problems.
           </span>
           <span className="font-500">
-            <a href="mailto:info@betterlinkengineering.co.zw" className="hover:text-accent transition-colors">
+            <a
+              href="mailto:info@betterlinkengineering.co.zw"
+              className="hover:text-accent transition-colors"
+            >
               info@betterlinkengineering.co.zw
             </a>
           </span>

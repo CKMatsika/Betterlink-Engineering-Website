@@ -12,7 +12,7 @@ import MiningCTA from './components/MiningCTA';
 export const metadata: Metadata = {
   title: 'Mining Division | Betterlink Engineering Zimbabwe',
   description:
-    'Betterlink Engineering Mining Division — boiler fabrication, installation, commissioning and maintenance. Mining processing plants, trommels, gold & chrome wash plants for Zimbabwe\'s small and medium scale miners.',
+    "Betterlink Engineering Mining Division — boiler fabrication, installation, commissioning and maintenance. Mining processing plants, trommels, gold & chrome wash plants for Zimbabwe's small and medium scale miners.",
   alternates: {
     canonical: 'https://www.betterlinkengineering.co.zw/mining',
   },
@@ -25,18 +25,48 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: '2010', title: 'Founded', desc: 'Betterlink Engineering established in Zimbabwe with a focus on industrial boiler services.' },
-  { year: '2014', title: 'Mining Division', desc: 'Dedicated mining and industrial engineering division launched to serve small and medium scale miners.' },
-  { year: '2017', title: 'Ministry Registered', desc: 'Officially registered with the Ministry of Mines for authorised boiler installation and certification.' },
-  { year: '2020', title: 'Processing Plants', desc: 'Expanded into full mining processing plant fabrication — trommels, gold and chrome wash plants.' },
-  { year: '2024', title: 'Nationwide Coverage', desc: 'Operations spanning all major mining provinces across Zimbabwe with 50+ completed projects.' },
+  {
+    year: '2010',
+    title: 'Founded',
+    desc: 'Betterlink Engineering established in Zimbabwe with a focus on industrial boiler services.',
+  },
+  {
+    year: '2014',
+    title: 'Mining Division',
+    desc: 'Dedicated mining and industrial engineering division launched to serve small and medium scale miners.',
+  },
+  {
+    year: '2017',
+    title: 'Ministry Registered',
+    desc: 'Officially registered with the Ministry of Mines for authorised boiler installation and certification.',
+  },
+  {
+    year: '2020',
+    title: 'Processing Plants',
+    desc: 'Expanded into full mining processing plant fabrication — trommels, gold and chrome wash plants.',
+  },
+  {
+    year: '2024',
+    title: 'Nationwide Coverage',
+    desc: 'Operations spanning all major mining provinces across Zimbabwe with 50+ completed projects.',
+  },
 ];
 
 const values = [
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: 'Safety First',
@@ -44,8 +74,18 @@ const values = [
   },
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+        />
       </svg>
     ),
     title: 'Precision Engineering',
@@ -53,17 +93,37 @@ const values = [
   },
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+        />
       </svg>
     ),
     title: 'Local Expertise',
-    desc: 'Deep understanding of Zimbabwe\'s mining landscape — from artisanal operations to large-scale industrial plants.',
+    desc: "Deep understanding of Zimbabwe's mining landscape — from artisanal operations to large-scale industrial plants.",
   },
   {
     icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1.5}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+        />
       </svg>
     ),
     title: 'End-to-End Service',
@@ -107,19 +167,13 @@ const projectPhotos = [
   },
 ];
 
-const badges = [
-  'Fabrication',
-  'Installation',
-  'Commissioning',
-  'Repairs & Maintenance',
-];
+const badges = ['Fabrication', 'Installation', 'Commissioning', 'Repairs & Maintenance'];
 
 export default function MiningPage() {
   return (
     <>
       <Header />
       <main id="main-content" className="bg-[#07101F]">
-
         {/* ── Hero ── */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 grid-lines-bg opacity-40" />
@@ -138,15 +192,19 @@ export default function MiningPage() {
                 </div>
 
                 <h1 className="font-display text-white leading-[0.88] tracking-tight mb-6">
-                  <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">Mining Boilers</span>
-                  <span className="block text-5xl lg:text-6xl xl:text-7xl font-800 text-[#E87B1E]">&amp; Processing</span>
+                  <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">
+                    Mining Boilers
+                  </span>
+                  <span className="block text-5xl lg:text-6xl xl:text-7xl font-800 text-[#E87B1E]">
+                    &amp; Processing
+                  </span>
                   <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">Plants</span>
                 </h1>
 
                 <p className="text-white/60 text-lg leading-relaxed mb-4 max-w-lg">
-                  500 KG &amp; 1 Ton Boilers — High Pressure &amp; Low Pressure. Betterlink Engineering
-                  fabricates, installs, commissions and maintains industrial boilers and mining
-                  processing plants for Zimbabwe&apos;s small and medium scale miners.
+                  500 KG &amp; 1 Ton Boilers — High Pressure &amp; Low Pressure. Betterlink
+                  Engineering fabricates, installs, commissions and maintains industrial boilers and
+                  mining processing plants for Zimbabwe&apos;s small and medium scale miners.
                 </p>
 
                 <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-lg">
@@ -171,8 +229,18 @@ export default function MiningPage() {
                     className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(232,123,30,0.4)]"
                   >
                     Get a Quotation
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </Link>
                   <Link href="/contact" className="btn-outline-white text-[0.75rem]">
@@ -216,7 +284,9 @@ export default function MiningPage() {
                       key={stat?.value + stat?.sub}
                       className="p-5 rounded-xl border border-white/8 bg-white/4 backdrop-blur-sm"
                     >
-                      <div className="text-2xl font-display font-800 text-[#E87B1E] mb-1">{stat?.value}</div>
+                      <div className="text-2xl font-display font-800 text-[#E87B1E] mb-1">
+                        {stat?.value}
+                      </div>
                       <div className="text-white text-xs font-700 mb-1">{stat?.label}</div>
                       <div className="text-white/40 text-xs">{stat?.sub}</div>
                     </div>
@@ -240,8 +310,12 @@ export default function MiningPage() {
                 { value: 'ZW', label: 'Ministry Registered' },
               ]?.map((s) => (
                 <div key={s?.label} className="text-center">
-                  <div className="text-4xl font-display font-800 text-[#E87B1E] mb-1">{s?.value}</div>
-                  <div className="text-white/50 text-xs font-600 tracking-widest uppercase">{s?.label}</div>
+                  <div className="text-4xl font-display font-800 text-[#E87B1E] mb-1">
+                    {s?.value}
+                  </div>
+                  <div className="text-white/50 text-xs font-600 tracking-widest uppercase">
+                    {s?.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -258,17 +332,20 @@ export default function MiningPage() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-8 h-px bg-[#E87B1E]" />
-                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">Who We Are</span>
+                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">
+                  Who We Are
+                </span>
               </div>
               <h2 className="font-display text-white text-4xl lg:text-5xl font-800 leading-[0.92] mb-6">
-                Built for Zimbabwe&apos;s<br />
+                Built for Zimbabwe&apos;s
+                <br />
                 <span className="text-[#E87B1E]">Mining Industry</span>
               </h2>
               <p className="text-white/60 leading-relaxed mb-5">
-                The Betterlink Engineering Mining &amp; Industrial division was established to address
-                a critical gap in Zimbabwe&apos;s mining sector — the need for locally-based, technically
-                capable engineering services that understand the unique challenges of small and medium
-                scale mining operations.
+                The Betterlink Engineering Mining &amp; Industrial division was established to
+                address a critical gap in Zimbabwe&apos;s mining sector — the need for
+                locally-based, technically capable engineering services that understand the unique
+                challenges of small and medium scale mining operations.
               </p>
               <p className="text-white/50 text-sm leading-relaxed mb-5">
                 We fabricate, install, commission and maintain 500 KG and 1 Ton boilers — both high
@@ -286,7 +363,13 @@ export default function MiningPage() {
                 className="inline-flex items-center gap-2 mt-8 text-[#E87B1E] text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:gap-3"
               >
                 More About the Division
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
@@ -296,7 +379,9 @@ export default function MiningPage() {
             <div className="space-y-5">
               <div className="flex items-center gap-3 mb-8">
                 <span className="w-8 h-px bg-[#E87B1E]" />
-                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">Core Capabilities</span>
+                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">
+                  Core Capabilities
+                </span>
               </div>
               {capabilities?.map((cap) => (
                 <div key={cap?.label}>
@@ -322,7 +407,9 @@ export default function MiningPage() {
             <div className="text-center mb-14">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <span className="w-8 h-px bg-[#E87B1E]" />
-                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">Our Values</span>
+                <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">
+                  Our Values
+                </span>
                 <span className="w-8 h-px bg-[#E87B1E]" />
               </div>
               <h2 className="font-display text-white text-4xl font-800 leading-tight">
@@ -352,14 +439,16 @@ export default function MiningPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="flex items-center gap-3 mb-4">
               <span className="w-8 h-px bg-[#E87B1E]" />
-              <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">Our Work</span>
+              <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">
+                Our Work
+              </span>
             </div>
             <h2 className="font-display text-white text-4xl lg:text-5xl font-800 leading-[0.92] mb-4">
               Project <span className="text-[#E87B1E]">Gallery</span>
             </h2>
             <p className="text-white/50 text-base leading-relaxed mb-12 max-w-2xl">
-              A selection of completed projects across Zimbabwe — from boiler fabrication and transportation
-              to full processing plant installations and electrical control systems.
+              A selection of completed projects across Zimbabwe — from boiler fabrication and
+              transportation to full processing plant installations and electrical control systems.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -394,7 +483,9 @@ export default function MiningPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="flex items-center gap-3 mb-12">
               <span className="w-8 h-px bg-[#E87B1E]" />
-              <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">Our Journey</span>
+              <span className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E]">
+                Our Journey
+              </span>
             </div>
 
             <div className="grid md:grid-cols-5 gap-4">
@@ -407,7 +498,9 @@ export default function MiningPage() {
                       : 'border-white/8 bg-white/3 mt-8'
                   }`}
                 >
-                  <div className="text-[#E87B1E] font-display font-800 text-2xl mb-2">{m?.year}</div>
+                  <div className="text-[#E87B1E] font-display font-800 text-2xl mb-2">
+                    {m?.year}
+                  </div>
                   <div className="text-white font-700 text-sm mb-2">{m?.title}</div>
                   <div className="text-white/45 text-xs leading-relaxed">{m?.desc}</div>
                 </div>

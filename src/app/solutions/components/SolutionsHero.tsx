@@ -36,7 +36,9 @@ export default function SolutionsHero() {
             Technology Solutions Built for Real Organisations
           </h1>
           <p className="text-white/60 text-lg font-500 leading-relaxed mb-8">
-            From custom software and AI to cybersecurity, ERP transformation and systems integration — Betterlink Engineering delivers end-to-end technology capability designed around the operational realities of organisations in Africa.
+            From custom software and AI to cybersecurity, ERP transformation and systems integration
+            — Betterlink Engineering delivers end-to-end technology capability designed around the
+            operational realities of organisations in Africa.
           </p>
           <Link href="/contact" className="btn-primary">
             Request a Consultation

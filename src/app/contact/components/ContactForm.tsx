@@ -120,16 +120,18 @@ export default function ContactForm() {
           <Icon name="CheckCircleIcon" size={32} className="text-accent" variant="solid" />
         </div>
         <div>
-          <h3 className="font-display text-2xl font-800 text-foreground mb-2">
-            Enquiry Submitted
-          </h3>
+          <h3 className="font-display text-2xl font-800 text-foreground mb-2">Enquiry Submitted</h3>
           <p className="text-muted-foreground text-base font-500 leading-relaxed max-w-md">
-            Thank you for your enquiry, {form.fullName.split(' ')[0]}. Betterlink Engineering will review your requirements and respond to{' '}
+            Thank you for your enquiry, {form.fullName.split(' ')[0]}. Betterlink Engineering will
+            review your requirements and respond to{' '}
             <strong className="text-foreground">{form.email}</strong>.
           </p>
         </div>
         <button
-          onClick={() => { setSubmitted(false); setForm(initialForm); }}
+          onClick={() => {
+            setSubmitted(false);
+            setForm(initialForm);
+          }}
           className="btn-outline-dark"
         >
           Submit Another Enquiry
@@ -140,16 +142,17 @@ export default function ContactForm() {
 
   return (
     <div className="bg-card rounded-2xl border border-border p-8 shadow-sm">
-      <h2 className="font-display text-2xl font-800 text-foreground mb-2">
-        Project Enquiry
-      </h2>
+      <h2 className="font-display text-2xl font-800 text-foreground mb-2">Project Enquiry</h2>
       <p className="text-muted-foreground text-sm font-500 mb-8">
         Complete the form below and Betterlink Engineering will be in touch.
       </p>
 
       <form onSubmit={handleSubmit} noValidate aria-label="Project enquiry form">
         {/* Honeypot — hidden from real users, catches automated submissions */}
-        <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+        <div
+          aria-hidden="true"
+          style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}
+        >
           <label htmlFor="companyWebsite">Company website</label>
           <input
             id="companyWebsite"
@@ -281,9 +284,13 @@ export default function ContactForm() {
               onChange={handleChange}
               className="form-input appearance-none pr-10"
             >
-              <option value="" disabled>Select a service...</option>
+              <option value="" disabled>
+                Select a service...
+              </option>
               {serviceOptions.map((opt) => (
-                <option key={opt} value={opt}>{opt}</option>
+                <option key={opt} value={opt}>
+                  {opt}
+                </option>
               ))}
             </select>
             <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
@@ -324,7 +331,9 @@ export default function ContactForm() {
             >
               <option value="">Select a timeline...</option>
               {timelineOptions.map((opt) => (
-                <option key={opt} value={opt}>{opt}</option>
+                <option key={opt} value={opt}>
+                  {opt}
+                </option>
               ))}
             </select>
             <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">

@@ -31,11 +31,7 @@ const lifecycle = [
 
 export default function SoftwareEngineeringSection() {
   return (
-    <section
-      id="software-engineering"
-      className="py-20 bg-background"
-      aria-labelledby="se-heading"
-    >
+    <section id="software-engineering" className="py-20 bg-background" aria-labelledby="se-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-start">
           {/* Left */}
@@ -48,10 +44,13 @@ export default function SoftwareEngineeringSection() {
               Custom Software Built Around Your Business
             </h2>
             <p className="text-muted-foreground text-base font-500 leading-relaxed mb-5">
-              Betterlink Engineering designs and develops software around business processes rather than forcing organisations into inappropriate generic solutions. Every application is engineered to the specific operational requirements of the client.
+              Betterlink Engineering designs and develops software around business processes rather
+              than forcing organisations into inappropriate generic solutions. Every application is
+              engineered to the specific operational requirements of the client.
             </p>
             <p className="text-muted-foreground text-base font-500 leading-relaxed mb-8">
-              We build across the full application stack — from front-end interfaces through back-end services, APIs, databases, cloud infrastructure and security layers.
+              We build across the full application stack — from front-end interfaces through
+              back-end services, APIs, databases, cloud infrastructure and security layers.
             </p>
             <Link href="/contact" className="btn-primary">
               Discuss Your Project
@@ -69,7 +68,12 @@ export default function SoftwareEngineeringSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {deliverables.map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <Icon name="CheckCircleIcon" size={16} className="text-accent flex-shrink-0" variant="solid" />
+                    <Icon
+                      name="CheckCircleIcon"
+                      size={16}
+                      className="text-accent flex-shrink-0"
+                      variant="solid"
+                    />
                     <span className="text-sm font-500 text-foreground">{item}</span>
                   </div>
                 ))}
@@ -89,7 +93,7 @@ export default function SoftwareEngineeringSection() {
                         className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0"
                         style={{ backgroundColor: 'rgba(29,106,229,0.2)' }}
                       >
-                        <Icon name={item.icon as any} size={14} className="text-accent" />
+                        <Icon name={item.icon} size={14} className="text-accent" />
                       </div>
                       <span className="text-xs font-700 text-white/70">{item.step}</span>
                     </div>

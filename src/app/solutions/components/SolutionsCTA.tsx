@@ -10,7 +10,8 @@ export default function SolutionsCTA() {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: 'radial-gradient(ellipse at 70% 50%, rgba(29,106,229,0.2) 0%, transparent 60%)',
+              background:
+                'radial-gradient(ellipse at 70% 50%, rgba(29,106,229,0.2) 0%, transparent 60%)',
             }}
           />
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
@@ -22,7 +23,9 @@ export default function SolutionsCTA() {
                 Ready to Discuss Your Technology Requirements?
               </h2>
               <p className="text-white/60 text-base font-500 leading-relaxed">
-                Whether you need custom software, AI integration, cybersecurity assessment, ERP implementation or systems integration — let us understand your challenge and engineer the right solution.
+                Whether you need custom software, AI integration, cybersecurity assessment, ERP
+                implementation or systems integration — let us understand your challenge and
+                engineer the right solution.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">

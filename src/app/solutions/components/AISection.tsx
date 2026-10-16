@@ -94,17 +94,23 @@ export default function AISection() {
             Turning AI Into Practical Business Capability
           </h2>
           <p className="text-muted-foreground text-base font-500 leading-relaxed">
-            Betterlink Engineering designs and implements AI solutions that address real operational problems — not AI for its own sake, but AI that improves how organisations work.
+            Betterlink Engineering designs and implements AI solutions that address real operational
+            problems — not AI for its own sake, but AI that improves how organisations work.
           </p>
         </div>
 
         {/* Capabilities list */}
         <div className="bg-primary rounded-2xl p-8 mb-10">
-          <p className="text-xs font-800 tracking-[0.3em] text-white/40 uppercase mb-6">AI Capabilities</p>
+          <p className="text-xs font-800 tracking-[0.3em] text-white/40 uppercase mb-6">
+            AI Capabilities
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {aiCapabilities.map((cap) => (
               <div key={cap} className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: 'var(--accent)' }} />
+                <div
+                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: 'var(--accent)' }}
+                />
                 <span className="text-sm font-500 text-white/70">{cap}</span>
               </div>
             ))}
@@ -123,7 +129,7 @@ export default function AISection() {
                   className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
                 >
-                  <Icon name={card.icon as any} size={22} className="text-accent" />
+                  <Icon name={card.icon} size={22} className="text-accent" />
                 </div>
                 <h3 className="font-display text-lg font-800 text-foreground leading-tight">
                   {card.title}
@@ -132,8 +138,15 @@ export default function AISection() {
               <ul className="flex flex-col gap-2.5">
                 {card.applications.map((app) => (
                   <li key={app} className="flex items-start gap-3">
-                    <Icon name="CheckCircleIcon" size={15} className="text-accent flex-shrink-0 mt-0.5" variant="solid" />
-                    <span className="text-sm font-500 text-muted-foreground leading-relaxed">{app}</span>
+                    <Icon
+                      name="CheckCircleIcon"
+                      size={15}
+                      className="text-accent flex-shrink-0 mt-0.5"
+                      variant="solid"
+                    />
+                    <span className="text-sm font-500 text-muted-foreground leading-relaxed">
+                      {app}
+                    </span>
                   </li>
                 ))}
               </ul>

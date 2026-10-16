@@ -36,10 +36,14 @@ export default function SystemsIntegrationSection() {
               Make Your Systems Work Together.
             </h2>
             <p className="text-muted-foreground text-base font-500 leading-relaxed mb-5">
-              Most organisations already have systems in place. Betterlink Engineering creates integration layers that allow existing applications to communicate, share data and operate as a connected enterprise — without forcing complete replacement.
+              Most organisations already have systems in place. Betterlink Engineering creates
+              integration layers that allow existing applications to communicate, share data and
+              operate as a connected enterprise — without forcing complete replacement.
             </p>
             <p className="text-muted-foreground text-base font-500 leading-relaxed mb-8">
-              From REST APIs and payment gateways through to government system connections, ERP integration and legacy database bridging — we design integration architectures that work.
+              From REST APIs and payment gateways through to government system connections, ERP
+              integration and legacy database bridging — we design integration architectures that
+              work.
             </p>
             <Link href="/contact" className="btn-primary">
               Discuss Integration Requirements
@@ -85,7 +89,11 @@ export default function SystemsIntegrationSection() {
                   <div className="w-px h-4 bg-white/20" />
                   <div
                     className="px-6 py-3 rounded-xl text-xs font-800 tracking-widest uppercase"
-                    style={{ backgroundColor: 'rgba(29,106,229,0.3)', color: 'var(--accent)', border: '1px solid rgba(29,106,229,0.4)' }}
+                    style={{
+                      backgroundColor: 'rgba(29,106,229,0.3)',
+                      color: 'var(--accent)',
+                      border: '1px solid rgba(29,106,229,0.4)',
+                    }}
                   >
                     Integration Layer
                   </div>

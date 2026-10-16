@@ -106,7 +106,8 @@ export default function IndustriesSection() {
             Sectors We Serve
           </h2>
           <p className="text-muted-foreground text-base font-500 leading-relaxed">
-            Betterlink Engineering understands that each sector has distinct operational requirements. We bring industry-specific knowledge to every engagement.
+            Betterlink Engineering understands that each sector has distinct operational
+            requirements. We bring industry-specific knowledge to every engagement.
           </p>
         </div>
 
@@ -121,7 +122,7 @@ export default function IndustriesSection() {
                   className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
                 >
-                  <Icon name={industry.icon as any} size={22} className="text-accent" />
+                  <Icon name={industry.icon} size={22} className="text-accent" />
                 </div>
                 <h3 className="font-display text-lg font-800 text-foreground leading-tight">
                   {industry.title}

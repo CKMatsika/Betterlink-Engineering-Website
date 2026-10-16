@@ -14,37 +14,43 @@ const steps: Step[] = [
   {
     number: '01',
     title: 'Discover',
-    description: 'Understand the organisation, problem, users and strategic objectives. We start by listening.',
+    description:
+      'Understand the organisation, problem, users and strategic objectives. We start by listening.',
     icon: 'MagnifyingGlassIcon',
   },
   {
     number: '02',
     title: 'Analyse',
-    description: 'Map processes, requirements, systems, risks and integration requirements. Document what exists and what is needed.',
+    description:
+      'Map processes, requirements, systems, risks and integration requirements. Document what exists and what is needed.',
     icon: 'DocumentMagnifyingGlassIcon',
   },
   {
     number: '03',
     title: 'Architect',
-    description: 'Design the solution, technology, data, integration and security architecture before a line of code is written.',
+    description:
+      'Design the solution, technology, data, integration and security architecture before a line of code is written.',
     icon: 'RectangleGroupIcon',
   },
   {
     number: '04',
     title: 'Build',
-    description: 'Develop the software or configure and implement the selected enterprise platform against agreed specifications.',
+    description:
+      'Develop the software or configure and implement the selected enterprise platform against agreed specifications.',
     icon: 'WrenchScrewdriverIcon',
   },
   {
     number: '05',
     title: 'Integrate & Secure',
-    description: 'Connect systems, migrate data, test functionality and implement appropriate cybersecurity controls throughout.',
+    description:
+      'Connect systems, migrate data, test functionality and implement appropriate cybersecurity controls throughout.',
     icon: 'ShieldCheckIcon',
   },
   {
     number: '06',
     title: 'Deploy & Support',
-    description: 'Training, go-live, monitoring, support and continuous improvement. We remain engaged after delivery.',
+    description:
+      'Training, go-live, monitoring, support and continuous improvement. We remain engaged after delivery.',
     icon: 'RocketLaunchIcon',
   },
 ];
@@ -97,7 +103,7 @@ export default function MethodologySection() {
 
         {/* 6-step grid — 3-col desktop, 2-col tablet, 1-col mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div
               key={step.number}
               className="method-step methodology-step group"
@@ -119,13 +125,11 @@ export default function MethodologySection() {
                   className="w-10 h-10 rounded-lg flex items-center justify-center"
                   style={{ backgroundColor: 'rgba(29,106,229,0.08)' }}
                 >
-                  <Icon name={step.icon as any} size={20} className="text-accent" />
+                  <Icon name={step.icon} size={20} className="text-accent" />
                 </div>
               </div>
 
-              <h3 className="font-display text-xl font-800 text-foreground mb-3">
-                {step.title}
-              </h3>
+              <h3 className="font-display text-xl font-800 text-foreground mb-3">{step.title}</h3>
               <p className="text-muted-foreground text-sm font-500 leading-relaxed">
                 {step.description}
               </p>
@@ -137,7 +141,9 @@ export default function MethodologySection() {
         <div className="mt-14 flex flex-wrap items-center justify-center gap-2 text-xs font-800 tracking-widest text-muted-foreground uppercase">
           {steps.map((step, i) => (
             <React.Fragment key={step.number}>
-              <span className="hover:text-accent transition-colors cursor-default">{step.title}</span>
+              <span className="hover:text-accent transition-colors cursor-default">
+                {step.title}
+              </span>
               {i < steps.length - 1 && (
                 <Icon name="ChevronRightIcon" size={14} className="text-muted-foreground/40" />
               )}

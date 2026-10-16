@@ -31,7 +31,8 @@ export default function HeroSection() {
       el.style.transform = 'translateY(50px)';
       const delay = 150 + i * 120;
       setTimeout(() => {
-        el.style.transition = 'opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1)';
+        el.style.transition =
+          'opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1)';
         el.style.opacity = '1';
         el.style.transform = 'translateY(0)';
       }, delay);
@@ -74,14 +75,9 @@ export default function HeroSection() {
       {/* Main content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
           {/* Left: Editorial headline */}
           <div className="lg:col-span-8">
-            <span
-              ref={labelRef}
-              className="section-label mb-10 block"
-              style={{ opacity: 1 }}
-            >
+            <span ref={labelRef} className="section-label mb-10 block" style={{ opacity: 1 }}>
               African Technology Engineering Partner
             </span>
 
@@ -105,9 +101,9 @@ export default function HeroSection() {
 
             <div ref={metaRef} style={{ opacity: 1 }}>
               <p className="text-white/55 text-lg md:text-xl font-500 leading-relaxed max-w-xl mb-10">
-                Betterlink Engineering delivers secure software, intelligent AI solutions, enterprise
-                systems, cybersecurity and technology consulting designed around the operational
-                realities of organisations in Africa.
+                Betterlink Engineering delivers secure software, intelligent AI solutions,
+                enterprise systems, cybersecurity and technology consulting designed around the
+                operational realities of organisations in Africa.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/solutions" className="btn-primary">
@@ -143,9 +139,7 @@ export default function HeroSection() {
 
         {/* Bottom scroll indicator */}
         <div className="mt-16 flex items-center gap-4">
-          <div
-            className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center animate-bounce"
-          >
+          <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center animate-bounce">
             <Icon name="ChevronDownIcon" size={14} className="text-white/40" />
           </div>
           <span className="text-[0.65rem] font-800 tracking-[0.4em] text-white/25 uppercase">

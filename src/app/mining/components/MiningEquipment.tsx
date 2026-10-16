@@ -26,13 +26,13 @@ const equipment: EquipmentItem[] = [
   {
     title: 'Gold Wash Plants',
     description:
-      'Complete gold wash plant systems for small and medium scale alluvial gold mining. Includes sluice boxes, concentrators and water recycling systems optimised for Zimbabwe\'s mining conditions.',
+      "Complete gold wash plant systems for small and medium scale alluvial gold mining. Includes sluice boxes, concentrators and water recycling systems optimised for Zimbabwe's mining conditions.",
     tags: ['Alluvial Gold', 'Sluice Systems', 'Concentrators', 'Water Recycling'],
   },
   {
     title: 'Chrome Wash Plants',
     description:
-      'Chrome ore washing and beneficiation plants designed for Zimbabwe\'s chrome mining sector. Efficient separation and concentration systems for small to medium scale chrome operations.',
+      "Chrome ore washing and beneficiation plants designed for Zimbabwe's chrome mining sector. Efficient separation and concentration systems for small to medium scale chrome operations.",
     tags: ['Chrome Ore', 'Beneficiation', 'Concentration', 'Small Scale'],
   },
   {
@@ -63,13 +63,12 @@ export default function MiningEquipment() {
           </div>
           <div className="grid lg:grid-cols-2 gap-8 items-end">
             <h2 className="font-display text-4xl lg:text-5xl font-800 text-white leading-tight tracking-tight">
-              Processing Plants &amp;{' '}
-              <span className="text-[#E87B1E]">Custom Equipment</span>
+              Processing Plants &amp; <span className="text-[#E87B1E]">Custom Equipment</span>
             </h2>
             <p className="text-white/50 text-base leading-relaxed">
-              Tailored solutions for Zimbabwe&apos;s gold, chrome and mineral mining sector.
-              Gold &amp; Chrome Wash Plants · Trommels · Custom Mining Equipment designed
-              specifically for small and medium scale mining operations.
+              Tailored solutions for Zimbabwe&apos;s gold, chrome and mineral mining sector. Gold
+              &amp; Chrome Wash Plants · Trommels · Custom Mining Equipment designed specifically
+              for small and medium scale mining operations.
             </p>
           </div>
         </div>
@@ -136,7 +135,13 @@ export default function MiningEquipment() {
               className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5"
             >
               Enquire Now
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>

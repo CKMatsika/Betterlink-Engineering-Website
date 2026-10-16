@@ -29,21 +29,29 @@ export default function Header() {
     } else {
       document.body.style.overflow = '';
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [menuOpen]);
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled
-            ? 'bg-primary/95 backdrop-blur-md border-b border-white/10' :'bg-transparent'
+          scrolled ? 'bg-primary/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Betterlink Engineering Home">
-            <AppLogo size={36} className="transition-transform duration-300 group-hover:scale-105" />
+          <Link
+            href="/"
+            className="flex items-center gap-3 group"
+            aria-label="Betterlink Engineering Home"
+          >
+            <AppLogo
+              size={36}
+              className="transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="flex flex-col">
               <span className="font-display text-sm font-800 text-white leading-tight tracking-tight">
                 Betterlink
@@ -97,8 +105,12 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
               <AppLogo size={36} />
               <div className="flex flex-col">
-                <span className="font-display text-sm font-800 text-white leading-tight">Betterlink</span>
-                <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase">Engineering</span>
+                <span className="font-display text-sm font-800 text-white leading-tight">
+                  Betterlink
+                </span>
+                <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase">
+                  Engineering
+                </span>
               </div>
             </Link>
             <button

@@ -8,7 +8,7 @@ import GalleryGrid from './components/GalleryGrid';
 export const metadata: Metadata = {
   title: 'Project Gallery | Betterlink Engineering Zimbabwe',
   description:
-    'Browse Betterlink Engineering\'s portfolio of completed projects — boiler fabrication, mining processing plants, industrial installations, and engineering works across Zimbabwe.',
+    "Browse Betterlink Engineering's portfolio of completed projects — boiler fabrication, mining processing plants, industrial installations, and engineering works across Zimbabwe.",
   alternates: {
     canonical: 'https://www.betterlinkengineering.co.zw/gallery',
   },

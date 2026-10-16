@@ -100,10 +100,7 @@ export default function CapabilitiesSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
             <span className="section-label mb-4">Core Capabilities</span>
-            <h2
-              id="capabilities-heading"
-              className="font-display text-section-xl text-foreground"
-            >
+            <h2 id="capabilities-heading" className="font-display text-section-xl text-foreground">
               What We Engineer
             </h2>
           </div>
@@ -116,7 +113,7 @@ export default function CapabilitiesSection() {
         {/* Row 1: [SoftwareEng cs-1][AI cs-1][Cybersecurity cs-1] */}
         {/* Row 2: [ERP cs-1][SystemsIntegration cs-1][TechConsulting cs-1] */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {capabilities.map((cap, i) => (
+          {capabilities.map((cap) => (
             /* cap-card */
             <div
               key={cap.title}
@@ -124,7 +121,8 @@ export default function CapabilitiesSection() {
               style={{
                 opacity: 0,
                 transform: 'translateY(30px)',
-                transition: 'opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)',
+                transition:
+                  'opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)',
               }}
             >
               {/* Icon */}
@@ -132,7 +130,7 @@ export default function CapabilitiesSection() {
                 className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                 style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
               >
-                <Icon name={cap.icon as any} size={22} className="text-accent" />
+                <Icon name={cap.icon} size={22} className="text-accent" />
               </div>
 
               {/* Content */}

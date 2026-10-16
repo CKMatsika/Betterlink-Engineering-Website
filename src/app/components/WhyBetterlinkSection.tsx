@@ -92,12 +92,24 @@ export default function WhyBetterlinkSection() {
               What Makes Us Different
             </h2>
             <p className="text-white/55 text-base font-500 leading-relaxed mb-8">
-              We combine business process understanding with technology engineering capability — taking organisations from challenge through to working solution.
+              We combine business process understanding with technology engineering capability —
+              taking organisations from challenge through to working solution.
             </p>
             <div className="border-t border-white/10 pt-8">
-              <p className="text-xs font-800 tracking-[0.3em] text-white/30 uppercase mb-4">Our Focus</p>
+              <p className="text-xs font-800 tracking-[0.3em] text-white/30 uppercase mb-4">
+                Our Focus
+              </p>
               <div className="flex flex-col gap-3">
-                {['Business Challenge', 'Requirements', 'Architecture', 'Development', 'Integration', 'Security', 'Deployment', 'Support'].map((stage) => (
+                {[
+                  'Business Challenge',
+                  'Requirements',
+                  'Architecture',
+                  'Development',
+                  'Integration',
+                  'Security',
+                  'Deployment',
+                  'Support',
+                ].map((stage) => (
                   <div key={stage} className="flex items-center gap-3">
                     <div className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
                     <span className="text-sm font-600 text-white/50">{stage}</span>
@@ -109,28 +121,25 @@ export default function WhyBetterlinkSection() {
 
           {/* Right: differentiator cards */}
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {differentiators.map((diff, i) => (
+            {differentiators.map((diff) => (
               <div
                 key={diff.title}
                 className="diff-item group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/30 hover:bg-white/8 transition-all duration-300"
                 style={{
                   opacity: 0,
                   transform: 'translateY(24px)',
-                  transition: 'opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)',
+                  transition:
+                    'opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)',
                 }}
               >
                 <div
                   className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
                   style={{ backgroundColor: 'rgba(29,106,229,0.15)' }}
                 >
-                  <Icon name={diff.icon as any} size={20} className="text-accent" />
+                  <Icon name={diff.icon} size={20} className="text-accent" />
                 </div>
-                <h3 className="font-display text-lg font-800 text-white mb-2">
-                  {diff.title}
-                </h3>
-                <p className="text-white/55 text-sm font-500 leading-relaxed">
-                  {diff.description}
-                </p>
+                <h3 className="font-display text-lg font-800 text-white mb-2">{diff.title}</h3>
+                <p className="text-white/55 text-sm font-500 leading-relaxed">{diff.description}</p>
               </div>
             ))}
           </div>

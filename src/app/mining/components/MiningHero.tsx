@@ -3,12 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const badges = [
-  'Fabrication',
-  'Installation',
-  'Commissioning',
-  'Repairs & Maintenance',
-];
+const badges = ['Fabrication', 'Installation', 'Commissioning', 'Repairs & Maintenance'];
 
 export default function MiningHero() {
   return (
@@ -39,9 +34,7 @@ export default function MiningHero() {
               <span className="block text-5xl lg:text-6xl xl:text-7xl font-800 text-[#E87B1E]">
                 &amp; Processing
               </span>
-              <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">
-                Plants
-              </span>
+              <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">Plants</span>
             </h1>
 
             <p className="text-white/60 text-lg leading-relaxed mb-4 max-w-lg">
@@ -74,14 +67,17 @@ export default function MiningHero() {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(232,123,30,0.4)]"
               >
                 Get a Quotation
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
-              <Link
-                href="/contact"
-                className="btn-outline-white text-[0.75rem]"
-              >
+              <Link href="/contact" className="btn-outline-white text-[0.75rem]">
                 Discuss Your Project
               </Link>
             </div>
@@ -99,7 +95,9 @@ export default function MiningHero() {
                 key={stat?.value}
                 className="p-6 rounded-xl border border-white/8 bg-white/4 backdrop-blur-sm"
               >
-                <div className="text-3xl font-display font-800 text-[#E87B1E] mb-1">{stat?.value}</div>
+                <div className="text-3xl font-display font-800 text-[#E87B1E] mb-1">
+                  {stat?.value}
+                </div>
                 <div className="text-white text-sm font-700 mb-1">{stat?.label}</div>
                 <div className="text-white/40 text-xs">{stat?.sub}</div>
               </div>
@@ -109,12 +107,24 @@ export default function MiningHero() {
             <div className="col-span-2 p-6 rounded-xl border border-[#E87B1E]/20 bg-[#E87B1E]/5">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-[#E87B1E]/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-[#E87B1E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-5 h-5 text-[#E87B1E]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <div className="text-white font-700 text-sm mb-1">Tailored for Zimbabwe&apos;s Miners</div>
+                  <div className="text-white font-700 text-sm mb-1">
+                    Tailored for Zimbabwe&apos;s Miners
+                  </div>
                   <div className="text-white/50 text-xs leading-relaxed">
                     Gold &amp; Chrome Wash Plants · Trommels · Custom Mining Equipment designed
                     specifically for small and medium scale mining operations.

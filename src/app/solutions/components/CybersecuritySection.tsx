@@ -34,11 +34,7 @@ const processSteps = [
 
 export default function CybersecuritySection() {
   return (
-    <section
-      id="cybersecurity"
-      className="py-20 bg-primary"
-      aria-labelledby="cyber-heading"
-    >
+    <section id="cybersecurity" className="py-20 bg-primary" aria-labelledby="cyber-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
           {/* Left */}
@@ -51,10 +47,14 @@ export default function CybersecuritySection() {
               Identify Weaknesses Before Attackers Do.
             </h2>
             <p className="text-white/60 text-base font-500 leading-relaxed mb-5">
-              Betterlink Engineering delivers authorised security assessments, ethical penetration testing and cybersecurity consulting to help organisations understand and address their security posture.
+              Betterlink Engineering delivers authorised security assessments, ethical penetration
+              testing and cybersecurity consulting to help organisations understand and address
+              their security posture.
             </p>
             <p className="text-white/60 text-base font-500 leading-relaxed mb-8">
-              All penetration testing is conducted under formal authorisation with clearly defined scope. Security is considered throughout the technology lifecycle — not as an afterthought.
+              All penetration testing is conducted under formal authorisation with clearly defined
+              scope. Security is considered throughout the technology lifecycle — not as an
+              afterthought.
             </p>
             <Link href="/contact" className="btn-primary">
               Request a Security Assessment
@@ -92,7 +92,7 @@ export default function CybersecuritySection() {
                         className="w-7 h-7 rounded-md flex items-center justify-center"
                         style={{ backgroundColor: 'rgba(29,106,229,0.2)' }}
                       >
-                        <Icon name={step.icon as any} size={13} className="text-accent" />
+                        <Icon name={step.icon} size={13} className="text-accent" />
                       </div>
                       <span className="text-xs font-700 text-white/70">{step.label}</span>
                     </div>

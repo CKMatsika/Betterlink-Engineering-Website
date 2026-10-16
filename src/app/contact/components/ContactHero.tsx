@@ -22,14 +22,12 @@ export default function ContactHero() {
         >
           Have a Technology Challenge?
         </h1>
-        <p
-          className="text-xl font-700 mb-4"
-          style={{ color: 'var(--accent)' }}
-        >
+        <p className="text-xl font-700 mb-4" style={{ color: 'var(--accent)' }}>
           Let us Engineer the Solution.
         </p>
         <p className="text-white/60 text-base font-500 leading-relaxed max-w-2xl mx-auto">
-          Tell us about your organisation and technology requirements. Betterlink Engineering will respond to discuss how we can help you move forward.
+          Tell us about your organisation and technology requirements. Betterlink Engineering will
+          respond to discuss how we can help you move forward.
         </p>
       </div>
     </section>

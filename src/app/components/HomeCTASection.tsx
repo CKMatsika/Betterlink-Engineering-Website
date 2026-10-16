@@ -4,10 +4,7 @@ import Icon from '@/components/ui/AppIcon';
 
 export default function HomeCTASection() {
   return (
-    <section
-      className="py-24 bg-background grid-lines-light"
-      aria-labelledby="cta-heading"
-    >
+    <section className="py-24 bg-background grid-lines-light" aria-labelledby="cta-heading">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="bg-primary rounded-3xl px-8 md:px-16 py-16 md:py-20 relative overflow-hidden">
           {/* Background glow */}
@@ -28,7 +25,8 @@ export default function HomeCTASection() {
                 Have a Technology Challenge?
               </h2>
               <p className="text-white/60 text-lg font-500 leading-relaxed">
-                Let us engineer the solution. From initial requirements through to deployment, Betterlink Engineering is your end-to-end technology partner.
+                Let us engineer the solution. From initial requirements through to deployment,
+                Betterlink Engineering is your end-to-end technology partner.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">

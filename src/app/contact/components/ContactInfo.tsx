@@ -1,7 +1,6 @@
 import React from 'react';
 import Icon from '@/components/ui/AppIcon';
 
-
 const servicesList = [
   'Software Development',
   'Artificial Intelligence & Machine Learning',
@@ -28,9 +27,7 @@ export default function ContactInfo() {
     <div className="flex flex-col gap-8">
       {/* Email contacts */}
       <div>
-        <h2 className="font-display text-xl font-800 text-foreground mb-5">
-          Get in Touch
-        </h2>
+        <h2 className="font-display text-xl font-800 text-foreground mb-5">Get in Touch</h2>
         <div className="flex flex-col gap-4">
           {contactEmails.map((contact) => (
             <div
@@ -41,7 +38,7 @@ export default function ContactInfo() {
                 className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
                 style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
               >
-                <Icon name={contact.icon as any} size={18} className="text-accent" />
+                <Icon name={contact.icon} size={18} className="text-accent" />
               </div>
               <div>
                 <p className="text-xs font-800 tracking-wide text-muted-foreground uppercase mb-1">
@@ -67,7 +64,10 @@ export default function ContactInfo() {
         <div className="flex flex-col gap-2">
           {servicesList.map((service) => (
             <div key={service} className="flex items-center gap-2.5">
-              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: 'var(--accent)' }} />
+              <div
+                className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                style={{ backgroundColor: 'var(--accent)' }}
+              />
               <span className="text-sm font-500 text-white/70">{service}</span>
             </div>
           ))}
@@ -76,7 +76,9 @@ export default function ContactInfo() {
 
       {/* Domain */}
       <div className="bg-muted rounded-xl p-5 border border-border">
-        <p className="text-xs font-800 tracking-widest text-muted-foreground uppercase mb-2">Website</p>
+        <p className="text-xs font-800 tracking-widest text-muted-foreground uppercase mb-2">
+          Website
+        </p>
         <a
           href="https://www.betterlinkengineering.co.zw"
           target="_blank"

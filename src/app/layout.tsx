@@ -38,7 +38,14 @@ export const metadata: Metadata = {
       'Software Engineering, AI/ML, Cybersecurity, ERP Transformation and Systems Integration for Africa.',
     url: 'https://www.betterlinkengineering.co.zw',
     siteName: 'Betterlink Engineering',
-    images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630, alt: 'Betterlink Engineering' }],
+    images: [
+      {
+        url: '/assets/images/app_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Betterlink Engineering',
+      },
+    ],
     locale: 'en_ZW',
     type: 'website',
   },
@@ -58,10 +65,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-      <html lang="en" className={manrope.variable}>
-      <body className={manrope.className}>
-        {children}
-</body>
+    <html lang="en" className={manrope.variable}>
+      <body className={manrope.className}>{children}</body>
     </html>
   );
 }

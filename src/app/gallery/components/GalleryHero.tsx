@@ -30,7 +30,9 @@ export default function GalleryHero() {
 
           <h1 className="font-display text-white leading-[0.9] tracking-tight mb-6">
             <span className="block text-5xl lg:text-6xl xl:text-7xl font-800">Project</span>
-            <span className="block text-5xl lg:text-6xl xl:text-7xl font-800 text-[#E87B1E]">Gallery</span>
+            <span className="block text-5xl lg:text-6xl xl:text-7xl font-800 text-[#E87B1E]">
+              Gallery
+            </span>
           </h1>
 
           <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl">
@@ -43,7 +45,9 @@ export default function GalleryHero() {
             {stats?.map((s) => (
               <div key={s?.label} className="flex flex-col">
                 <span className="text-3xl font-display font-800 text-[#E87B1E]">{s?.value}</span>
-                <span className="text-white/50 text-xs font-600 tracking-widest uppercase mt-1">{s?.label}</span>
+                <span className="text-white/50 text-xs font-600 tracking-widest uppercase mt-1">
+                  {s?.label}
+                </span>
               </div>
             ))}
           </div>
