@@ -158,10 +158,21 @@ export default function ERPSection() {
           </div>
         </div>
 
-        <Link href="/contact" className="btn-primary">
-          Discuss an ERP Project
-          <Icon name="ArrowRightIcon" size={15} />
-        </Link>
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4">
+          <Link href="/contact" className="btn-primary">
+            Discuss an ERP Project
+            <Icon name="ArrowRightIcon" size={15} />
+          </Link>
+          <a
+            href="https://microfinance-saas-feature-phase-13-production-readiness-a5gzyz.laravel.cloud/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-md border border-accent text-accent font-700 text-[0.8125rem] uppercase tracking-[0.05em] transition-colors duration-200 hover:bg-accent hover:text-accent-foreground"
+          >
+            Explore the Microfinance Platform
+            <Icon name="ArrowTopRightOnSquareIcon" size={15} />
+          </a>
+        </div>
       </div>
     </section>
   );
