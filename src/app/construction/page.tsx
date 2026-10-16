@@ -190,7 +190,7 @@ export default function ConstructionPage() {
                       style={{
                         border: `1px solid ${ACCENT}4D`,
                         backgroundColor: `${ACCENT}1A`,
-                        color: '#8FB6F5',
+                        color: '#F7B08A',
                       }}
                     >
                       {badge}

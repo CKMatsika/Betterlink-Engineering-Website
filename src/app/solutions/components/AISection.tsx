@@ -154,11 +154,20 @@ export default function AISection() {
           ))}
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4">
           <Link href="/contact" className="btn-primary">
             Discuss an AI Project
             <Icon name="ArrowRightIcon" size={15} />
           </Link>
+          <a
+            href="https://teacher-companion.ai.studio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-accent"
+          >
+            Explore Teacher Companion
+            <Icon name="ArrowTopRightOnSquareIcon" size={15} />
+          </a>
         </div>
       </div>
     </section>

@@ -167,11 +167,24 @@ export default function ERPSection() {
             href="https://microfinance-saas-feature-phase-13-production-readiness-a5gzyz.laravel.cloud/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-md border border-accent text-accent font-700 text-[0.8125rem] uppercase tracking-[0.05em] transition-colors duration-200 hover:bg-accent hover:text-accent-foreground"
+            className="btn-outline-accent"
           >
             Explore the Microfinance Platform
             <Icon name="ArrowTopRightOnSquareIcon" size={15} />
           </a>
+          <a
+            href="https://app-e1e0698qjlz5.appmedo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-accent"
+          >
+            Launch the Application
+            <Icon name="ArrowTopRightOnSquareIcon" size={15} />
+          </a>
+          <Link href="/educational-erp" className="btn-outline-accent">
+            Explore Educational ERP
+            <Icon name="ArrowRightIcon" size={15} />
+          </Link>
         </div>
       </div>
     </section>

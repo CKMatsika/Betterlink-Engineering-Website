@@ -52,10 +52,21 @@ export default function SoftwareEngineeringSection() {
               We build across the full application stack — from front-end interfaces through
               back-end services, APIs, databases, cloud infrastructure and security layers.
             </p>
-            <Link href="/contact" className="btn-primary">
-              Discuss Your Project
-              <Icon name="ArrowRightIcon" size={15} />
-            </Link>
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4">
+              <Link href="/contact" className="btn-primary">
+                Discuss Your Project
+                <Icon name="ArrowRightIcon" size={15} />
+              </Link>
+              <a
+                href="https://actuai-africa.ai.studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline-accent"
+              >
+                Explore ActuAI Africa
+                <Icon name="ArrowTopRightOnSquareIcon" size={15} />
+              </a>
+            </div>
           </div>
 
           {/* Right */}
