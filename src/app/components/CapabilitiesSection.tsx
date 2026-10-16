@@ -99,13 +99,17 @@ export default function CapabilitiesSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
-            <span className="section-label mb-4">Core Capabilities</span>
+            <span className="section-label mb-4">Technology Division</span>
             <h2 id="capabilities-heading" className="font-display text-section-xl text-foreground">
               What We Engineer
             </h2>
           </div>
           <p className="text-muted-foreground text-base font-500 leading-relaxed max-w-sm">
-            We understand both the business process and the technology behind it.
+            We understand both the business process and the technology behind it.{' '}
+            <a href="/solutions" className="text-accent font-700 hover:underline">
+              Explore the Technology division
+            </a>
+            .
           </p>
         </div>
 

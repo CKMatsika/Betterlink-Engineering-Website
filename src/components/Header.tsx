@@ -7,8 +7,7 @@ import Icon from '@/components/ui/AppIcon';
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Solutions', href: '/solutions' },
-  { label: 'Mining Division', href: '/mining' },
+  { label: 'Divisions', href: '/#divisions' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -73,7 +72,7 @@ export default function Header() {
           <Link
             href="/"
             className="flex items-center gap-3 group"
-            aria-label="Betterlink Engineering Home"
+            aria-label="Betterlink Industries Home"
           >
             <AppLogo
               size={36}
@@ -84,7 +83,7 @@ export default function Header() {
                 Betterlink
               </span>
               <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase leading-none">
-                Engineering
+                Industries
               </span>
             </div>
           </Link>
@@ -137,7 +136,7 @@ export default function Header() {
                   Betterlink
                 </span>
                 <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase">
-                  Engineering
+                  Industries
                 </span>
               </div>
             </Link>
@@ -175,7 +174,7 @@ export default function Header() {
           </nav>
 
           <div className="px-8 pb-10 text-xs text-white/30 font-600 tracking-widest uppercase">
-            © 2026 Betterlink Engineering
+            © 2026 Betterlink Industries
           </div>
         </div>
       )}

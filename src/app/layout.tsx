@@ -20,31 +20,32 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.betterlinkengineering.co.zw'),
-  title: 'Betterlink Engineering — Technology & Digital Transformation',
+  title: 'Betterlink Industries — Technology, Mining, Energy & Construction',
   description:
-    'Betterlink Engineering delivers software engineering, AI solutions, cybersecurity, ERP transformation, systems integration and ICT consulting for organisations in Africa.',
+    'Betterlink Industries is a Zimbabwean multi-disciplinary group delivering technology & software, mining & industrial, energy, and construction & civils solutions across Africa.',
   keywords: [
-    'Software Development Zimbabwe',
-    'AI Solutions Zimbabwe',
-    'Cybersecurity Zimbabwe',
-    'ERP Implementation Zimbabwe',
-    'Systems Integration Zimbabwe',
-    'Digital Transformation Zimbabwe',
-    'ICT Consulting Africa',
+    'Betterlink Industries',
+    'Engineering Zimbabwe',
+    'Technology Solutions Zimbabwe',
+    'Mining Engineering Zimbabwe',
+    'Solar Energy Zambia',
+    'Construction and Civils Zimbabwe',
+    'Telecom Infrastructure Africa',
+    'Industrial Engineering Africa',
   ],
-  authors: [{ name: 'Betterlink Engineering', url: 'https://www.betterlinkengineering.co.zw' }],
+  authors: [{ name: 'Betterlink Industries', url: 'https://www.betterlinkengineering.co.zw' }],
   openGraph: {
-    title: 'Betterlink Engineering — Technology & Digital Transformation',
+    title: 'Betterlink Industries — Technology, Mining, Energy & Construction',
     description:
-      'Software Engineering, AI/ML, Cybersecurity, ERP Transformation and Systems Integration for Africa.',
+      'Technology, Mining, Energy and Construction & Civils — one accountable engineering partner across Africa.',
     url: 'https://www.betterlinkengineering.co.zw',
-    siteName: 'Betterlink Engineering',
+    siteName: 'Betterlink Industries',
     images: [
       {
         url: '/assets/images/app_logo.png',
         width: 1200,
         height: 630,
-        alt: 'Betterlink Engineering',
+        alt: 'Betterlink Industries',
       },
     ],
     locale: 'en_ZW',
@@ -52,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Betterlink Engineering',
-    description: 'Engineering Technology That Solves Real Business Problems.',
+    title: 'Betterlink Industries',
+    description: 'Technology, Mining, Energy and Construction & Civils across Africa.',
     images: ['/assets/images/app_logo.png'],
   },
   icons: {
@@ -70,11 +71,12 @@ const structuredData = {
     {
       '@type': 'Organization',
       '@id': 'https://www.betterlinkengineering.co.zw/#organization',
-      name: 'Betterlink Engineering',
+      name: 'Betterlink Industries',
+      alternateName: 'Betterlink Engineering',
       url: 'https://www.betterlinkengineering.co.zw',
       logo: 'https://www.betterlinkengineering.co.zw/assets/images/app_logo.png',
       description:
-        'Betterlink Engineering delivers software engineering, AI solutions, cybersecurity, ERP transformation, systems integration and ICT consulting for organisations across Africa.',
+        'Betterlink Industries is a Zimbabwean multi-disciplinary group delivering technology & software, mining & industrial, energy, and construction & civils solutions across Africa.',
       email: 'info@betterlinkengineering.co.zw',
       areaServed: 'ZW',
       contactPoint: [
@@ -98,7 +100,7 @@ const structuredData = {
     {
       '@type': 'WebSite',
       '@id': 'https://www.betterlinkengineering.co.zw/#website',
-      name: 'Betterlink Engineering',
+      name: 'Betterlink Industries',
       url: 'https://www.betterlinkengineering.co.zw',
       publisher: { '@id': 'https://www.betterlinkengineering.co.zw/#organization' },
     },

@@ -22,11 +22,11 @@ export default function HomeCTASection() {
                 id="cta-heading"
                 className="font-display text-section-xl text-white mb-4 leading-tight"
               >
-                Have a Technology Challenge?
+                Have an Engineering Challenge?
               </h2>
               <p className="text-white/60 text-lg font-500 leading-relaxed">
-                Let us engineer the solution. From initial requirements through to deployment,
-                Betterlink Engineering is your end-to-end technology partner.
+                Let us engineer the solution. From technology and digital systems to mining, energy
+                and construction, Betterlink Industries is your end-to-end partner.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">
@@ -34,8 +34,8 @@ export default function HomeCTASection() {
                 Request a Consultation
                 <Icon name="ArrowRightIcon" size={16} />
               </Link>
-              <Link href="/solutions" className="btn-outline-white text-sm">
-                Explore Solutions
+              <Link href="/#divisions" className="btn-outline-white text-sm">
+                Explore Divisions
               </Link>
             </div>
           </div>

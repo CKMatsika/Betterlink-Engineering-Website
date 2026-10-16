@@ -4,8 +4,10 @@ import AppLogo from '@/components/ui/AppLogo';
 
 const footerLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Solutions', href: '/solutions' },
-  { label: 'Mining Division', href: '/mining' },
+  { label: 'Technology', href: '/solutions' },
+  { label: 'Mining', href: '/mining' },
+  { label: 'Energy', href: '/energy' },
+  { label: 'Construction & Civils', href: '/construction' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
   { label: 'Privacy', href: '/privacy' },
@@ -25,7 +27,7 @@ export default function Footer() {
                 Betterlink
               </span>
               <span className="text-[0.6rem] font-700 tracking-[0.2em] text-muted-foreground uppercase">
-                Engineering
+                Industries
               </span>
             </div>
           </div>
@@ -49,15 +51,13 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex items-center gap-4">
             <span className="text-sm font-500 text-muted-foreground">
-              © 2026 Betterlink Engineering
+              © 2026 Betterlink Industries
             </span>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span className="font-500">
-            Engineering Technology That Solves Real Business Problems.
-          </span>
+          <span className="font-500">Technology · Mining · Energy · Construction &amp; Civils</span>
           <span className="font-500">
             <a
               href="mailto:info@betterlinkengineering.co.zw"

@@ -4,14 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 
-const capabilities = [
-  'Software Engineering',
-  'Artificial Intelligence',
-  'Cybersecurity',
-  'ERP Transformation',
-  'Systems Integration',
-  'Technology Consulting',
-];
+const divisions = ['Technology', 'Mining', 'Energy', 'Construction & Civils'];
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLElement>(null);
@@ -43,7 +36,7 @@ export default function HeroSection() {
     <section
       ref={heroRef}
       className="relative min-h-screen flex flex-col justify-center bg-primary noise-overlay overflow-hidden"
-      aria-label="Betterlink Engineering hero"
+      aria-label="Betterlink Industries hero"
     >
       {/* Grid lines background */}
       <div className="absolute inset-0 grid-lines-bg opacity-100" />
@@ -78,7 +71,7 @@ export default function HeroSection() {
           {/* Left: Editorial headline */}
           <div className="lg:col-span-8">
             <span ref={labelRef} className="section-label mb-10 block" style={{ opacity: 1 }}>
-              African Technology Engineering Partner
+              African Engineering &amp; Industrial Group
             </span>
 
             <div ref={headlineRef} className="mb-12">
@@ -89,25 +82,25 @@ export default function HeroSection() {
                 className="font-display editorial-heading text-hero-xl uppercase block accent-glow"
                 style={{ color: 'var(--accent)' }}
               >
-                Technology
+                Industries
               </h1>
               <h1 className="font-display editorial-heading text-hero-xl text-outline-white uppercase block">
-                That Solves
+                That Build
               </h1>
               <h1 className="font-display editorial-heading text-hero-xl text-white uppercase block">
-                Real Problems.
+                Africa.
               </h1>
             </div>
 
             <div ref={metaRef} style={{ opacity: 1 }}>
               <p className="text-white/55 text-lg md:text-xl font-500 leading-relaxed max-w-xl mb-10">
-                Betterlink Engineering delivers secure software, intelligent AI solutions,
-                enterprise systems, cybersecurity and technology consulting designed around the
-                operational realities of organisations in Africa.
+                Betterlink Industries is a multi-disciplinary group uniting Technology, Mining,
+                Energy and Construction &amp; Civils — delivering engineering and digital solutions
+                built around the operational realities of organisations across Africa.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/solutions" className="btn-primary">
-                  Explore Our Solutions
+                <Link href="/#divisions" className="btn-primary">
+                  Explore Our Divisions
                   <Icon name="ArrowRightIcon" size={16} />
                 </Link>
                 <Link href="/contact" className="btn-outline-white">
@@ -117,11 +110,11 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right: Capability stack */}
+          {/* Right: Division stack */}
           <div className="lg:col-span-4 hidden lg:flex flex-col gap-2">
-            {capabilities.map((cap, i) => (
+            {divisions.map((division, i) => (
               <div
-                key={cap}
+                key={division}
                 className="group flex items-center gap-4 px-5 py-4 rounded-xl border border-white/8 hover:border-accent/40 hover:bg-white/5 transition-all duration-300"
                 style={{ animationDelay: `${i * 60}ms` }}
               >
@@ -130,7 +123,7 @@ export default function HeroSection() {
                   style={{ backgroundColor: 'var(--accent)' }}
                 />
                 <span className="text-sm font-600 text-white/60 group-hover:text-white transition-colors duration-200 tracking-wide">
-                  {cap}
+                  {division}
                 </span>
               </div>
             ))}
