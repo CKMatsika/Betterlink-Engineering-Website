@@ -245,6 +245,17 @@ export default function EnergyPage() {
                     )
                   )}
                 </div>
+
+                <a
+                  href="https://balunda-sun-spark.lovable.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-7 px-7 py-3.5 rounded-md text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:-translate-y-0.5"
+                  style={{ backgroundColor: ACCENT }}
+                >
+                  View the Project Website
+                  <Icon name="ArrowRightIcon" size={16} />
+                </a>
               </div>
 
               <div className="lg:col-span-7">
