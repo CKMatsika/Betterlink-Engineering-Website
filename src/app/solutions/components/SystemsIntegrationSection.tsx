@@ -90,9 +90,9 @@ export default function SystemsIntegrationSection() {
                   <div
                     className="px-6 py-3 rounded-xl text-xs font-800 tracking-widest uppercase"
                     style={{
-                      backgroundColor: 'rgba(29,106,229,0.3)',
+                      backgroundColor: 'rgba(226,83,11,0.3)',
                       color: 'var(--accent)',
-                      border: '1px solid rgba(29,106,229,0.4)',
+                      border: '1px solid rgba(226,83,11,0.4)',
                     }}
                   >
                     Integration Layer

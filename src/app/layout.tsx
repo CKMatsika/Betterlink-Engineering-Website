@@ -15,7 +15,7 @@ const manrope = localFont({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0a1628',
+  themeColor: '#180d0a',
 };
 
 export const metadata: Metadata = {

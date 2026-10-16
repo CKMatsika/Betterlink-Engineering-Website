@@ -91,7 +91,7 @@ export default function SoftwareEngineeringSection() {
                     <div className="flex items-center gap-2">
                       <div
                         className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0"
-                        style={{ backgroundColor: 'rgba(29,106,229,0.2)' }}
+                        style={{ backgroundColor: 'rgba(226,83,11,0.2)' }}
                       >
                         <Icon name={item.icon} size={14} className="text-accent" />
                       </div>

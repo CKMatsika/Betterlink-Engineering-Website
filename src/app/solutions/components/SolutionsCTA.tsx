@@ -11,7 +11,7 @@ export default function SolutionsCTA() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                'radial-gradient(ellipse at 70% 50%, rgba(29,106,229,0.2) 0%, transparent 60%)',
+                'radial-gradient(ellipse at 70% 50%, rgba(226,83,11,0.2) 0%, transparent 60%)',
             }}
           />
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">

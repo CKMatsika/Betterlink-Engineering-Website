@@ -25,7 +25,7 @@ const divisions: Division[] = [
       'Custom software engineering, artificial intelligence, cybersecurity, ERP transformation, systems integration and ICT consulting — built around real organisational requirements.',
     tags: ['Software', 'AI / ML', 'Cybersecurity', 'ERP', 'Integration'],
     href: '/solutions',
-    accent: '#1d6ae5',
+    accent: '#E2530B',
   },
   {
     number: '02',
@@ -36,7 +36,7 @@ const divisions: Division[] = [
       'Fabrication, installation, commissioning and maintenance of 500 KG and 1 Ton boilers, mining processing plants, trommels and gold & chrome wash plants. Ministry of Mines registered.',
     tags: ['Boilers', 'Processing Plants', 'NDT', 'Maintenance'],
     href: '/mining',
-    accent: '#E87B1E',
+    accent: '#B40001',
   },
   {
     number: '03',

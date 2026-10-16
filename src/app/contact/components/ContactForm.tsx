@@ -115,7 +115,7 @@ export default function ContactForm() {
       <div className="bg-card rounded-2xl border border-border p-12 flex flex-col items-center text-center gap-6">
         <div
           className="w-16 h-16 rounded-full flex items-center justify-center"
-          style={{ backgroundColor: 'rgba(29,106,229,0.12)' }}
+          style={{ backgroundColor: 'rgba(226,83,11,0.12)' }}
         >
           <Icon name="CheckCircleIcon" size={32} className="text-accent" variant="solid" />
         </div>

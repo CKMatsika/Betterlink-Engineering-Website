@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8faff;
-  --foreground: #0a1628;
-  --primary: #0a1628;
+  --background: #fdf8f5;
+  --foreground: #1d1210;
+  --primary: #180d0a;
   --primary-foreground: #ffffff;
-  --secondary: #1a2e4a;
+  --secondary: #b40001;
   --secondary-foreground: #ffffff;
-  --accent: #1d6ae5;
+  --accent: #e2530b;
   --accent-foreground: #ffffff;
-  --muted: #eef2f9;
-  --muted-foreground: #5a7090;
+  --muted: #f4ece7;
+  --muted-foreground: #7c665b;
   --card: #ffffff;
-  --card-foreground: #0a1628;
-  --border: #dde5f0;
-  --input: #dde5f0;
-  --ring: #1d6ae5;
+  --card-foreground: #1d1210;
+  --border: #ece0d8;
+  --input: #ece0d8;
+  --ring: #e2530b;
   --radius: 0.75rem;
   --font-sans: var(--font-manrope), sans-serif;
   --font-cabinet: var(--font-manrope);
   --font-display: var(--font-cabinet), sans-serif;
-  --nav-dark: #07101f;
+  --nav-dark: #120a08;
 }
 
 @layer base {
@@ -81,28 +81,28 @@
   }
 
   .text-outline-navy {
-    -webkit-text-stroke: 1.5px rgba(10, 22, 40, 0.4);
+    -webkit-text-stroke: 1.5px rgba(24, 13, 10, 0.42);
     color: transparent;
   }
 
   .grid-lines-bg {
     background-image:
-      linear-gradient(to right, rgba(29, 106, 229, 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(29, 106, 229, 0.06) 1px, transparent 1px);
+      linear-gradient(to right, rgba(226, 83, 11, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(226, 83, 11, 0.06) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
   .grid-lines-light {
     background-image:
-      linear-gradient(to right, rgba(10, 22, 40, 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(10, 22, 40, 0.04) 1px, transparent 1px);
+      linear-gradient(to right, rgba(24, 13, 10, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(24, 13, 10, 0.05) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
   .accent-glow {
     text-shadow:
-      0 0 40px rgba(29, 106, 229, 0.6),
-      0 0 80px rgba(29, 106, 229, 0.2);
+      0 0 40px rgba(226, 83, 11, 0.6),
+      0 0 80px rgba(226, 83, 11, 0.2);
   }
 
   .card-hover {
@@ -113,7 +113,7 @@
 
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 24px 60px -12px rgba(10, 22, 40, 0.18);
+    box-shadow: 0 24px 60px -12px rgba(24, 13, 10, 0.18);
   }
 
   .service-card-border {
@@ -147,9 +147,9 @@
   }
 
   .btn-primary:hover {
-    background-color: #1558cc;
+    background-color: #c1470a;
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(29, 106, 229, 0.4);
+    box-shadow: 0 8px 24px rgba(226, 83, 11, 0.4);
   }
 
   .btn-outline-white {
@@ -193,7 +193,7 @@
 
   .btn-outline-dark:hover {
     border-color: var(--accent);
-    background-color: rgba(29, 106, 229, 0.05);
+    background-color: rgba(226, 83, 11, 0.05);
     color: var(--accent);
   }
 
@@ -207,7 +207,7 @@
   }
 
   .project-tag {
-    background-color: rgba(29, 106, 229, 0.1);
+    background-color: rgba(226, 83, 11, 0.1);
     color: var(--accent);
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -215,7 +215,7 @@
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    border: 1px solid rgba(29, 106, 229, 0.2);
+    border: 1px solid rgba(226, 83, 11, 0.2);
   }
 
   .project-tag-dark {
@@ -294,7 +294,7 @@
 
   .form-input:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(29, 106, 229, 0.12);
+    box-shadow: 0 0 0 3px rgba(226, 83, 11, 0.12);
     background-color: #ffffff;
   }
 
@@ -325,7 +325,7 @@
 
   .methodology-step:hover {
     border-color: var(--accent);
-    box-shadow: 0 8px 32px rgba(29, 106, 229, 0.1);
+    box-shadow: 0 8px 32px rgba(226, 83, 11, 0.1);
   }
 
   .methodology-step::before {

@@ -132,7 +132,7 @@ export default function CapabilitiesSection() {
               {/* Icon */}
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
               >
                 <Icon name={cap.icon} size={22} className="text-accent" />
               </div>

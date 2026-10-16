@@ -22,7 +22,7 @@ export default function SolutionsHero() {
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(29,106,229,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(226,83,11,0.15) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
       />

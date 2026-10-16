@@ -117,13 +117,13 @@ export default function MethodologySection() {
               <div className="flex items-center justify-between mb-5">
                 <span
                   className="font-display text-4xl font-800 leading-none"
-                  style={{ color: 'rgba(29,106,229,0.15)' }}
+                  style={{ color: 'rgba(226,83,11,0.15)' }}
                 >
                   {step.number}
                 </span>
                 <div
                   className="w-10 h-10 rounded-lg flex items-center justify-center"
-                  style={{ backgroundColor: 'rgba(29,106,229,0.08)' }}
+                  style={{ backgroundColor: 'rgba(226,83,11,0.08)' }}
                 >
                   <Icon name={step.icon} size={20} className="text-accent" />
                 </div>

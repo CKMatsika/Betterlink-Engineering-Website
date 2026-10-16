@@ -226,7 +226,7 @@ export default function GalleryGrid() {
 
         {/* CTA */}
         <div className="mt-20 text-center">
-          <div className="inline-block p-px rounded-2xl bg-gradient-to-br from-[#E87B1E]/40 to-[#1D6AE5]/20">
+          <div className="inline-block p-px rounded-2xl bg-gradient-to-br from-[#E87B1E]/40 to-[#B40001]/20">
             <div className="bg-[#07101F] rounded-2xl px-10 py-10">
               <p className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E] mb-4">
                 Start Your Project

@@ -36,7 +36,7 @@ export default function ContactInfo() {
             >
               <div
                 className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
               >
                 <Icon name={contact.icon} size={18} className="text-accent" />
               </div>

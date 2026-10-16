@@ -16,7 +16,7 @@ export default function GalleryHero() {
 
       {/* Glow accents */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-[#E87B1E]/10 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-1/3 w-[350px] h-[350px] rounded-full bg-[#1D6AE5]/8 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/3 w-[350px] h-[350px] rounded-full bg-[#B40001]/8 blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-36 pb-20 w-full">
         <div className="max-w-3xl">

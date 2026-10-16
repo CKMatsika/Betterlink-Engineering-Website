@@ -127,7 +127,7 @@ export default function AISection() {
               <div className="flex items-center gap-4 mb-5">
                 <div
                   className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                  style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
                 >
                   <Icon name={card.icon} size={22} className="text-accent" />
                 </div>

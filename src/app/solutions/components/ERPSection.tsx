@@ -79,7 +79,7 @@ export default function ERPSection() {
                     style={{
                       backgroundColor:
                         i === 0 || i === transformationFlow?.length - 1
-                          ? 'rgba(29,106,229,0.3)'
+                          ? 'rgba(226,83,11,0.3)'
                           : 'rgba(255,255,255,0.08)',
                       color:
                         i === transformationFlow?.length - 1
@@ -143,8 +143,8 @@ export default function ERPSection() {
             <div
               className="rounded-2xl p-7 border"
               style={{
-                backgroundColor: 'rgba(29,106,229,0.06)',
-                borderColor: 'rgba(29,106,229,0.2)',
+                backgroundColor: 'rgba(226,83,11,0.06)',
+                borderColor: 'rgba(226,83,11,0.2)',
               }}
             >
               <h3 className="font-display text-base font-800 text-foreground mb-2">

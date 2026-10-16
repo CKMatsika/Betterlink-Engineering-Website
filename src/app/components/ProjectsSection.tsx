@@ -167,9 +167,9 @@ export default function ProjectsSection() {
                 <span
                   className="text-[0.65rem] font-800 tracking-[0.3em] uppercase px-3 py-1.5 rounded-full border"
                   style={{
-                    borderColor: 'rgba(29,106,229,0.5)',
+                    borderColor: 'rgba(226,83,11,0.5)',
                     color: 'var(--accent)',
-                    backgroundColor: 'rgba(29,106,229,0.1)',
+                    backgroundColor: 'rgba(226,83,11,0.1)',
                   }}
                 >
                   Flagship Innovation

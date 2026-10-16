@@ -100,7 +100,7 @@ export default function EnergyPage() {
   return (
     <>
       <Header />
-      <main id="main-content" className="bg-[#0B1220]">
+      <main id="main-content" className="bg-[#150d0a]">
         {/* ── Hero ── */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 grid-lines-bg opacity-40" />
@@ -110,7 +110,7 @@ export default function EnergyPage() {
           />
           <div
             className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full pointer-events-none"
-            style={{ background: 'rgba(29,106,229,0.08)', filter: 'blur(100px)' }}
+            style={{ background: 'rgba(226,83,11,0.08)', filter: 'blur(100px)' }}
           />
 
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 w-full">
@@ -204,7 +204,7 @@ export default function EnergyPage() {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0B1220] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#150d0a] to-transparent" />
         </section>
 
         {/* ── Flagship project ── */}

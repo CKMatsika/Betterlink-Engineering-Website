@@ -72,7 +72,7 @@ export default function ConsultingSection() {
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
               >
                 <Icon name="DocumentMagnifyingGlassIcon" size={20} className="text-accent" />
               </div>
@@ -97,7 +97,7 @@ export default function ConsultingSection() {
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
               >
                 <Icon name="ClipboardDocumentCheckIcon" size={20} className="text-accent" />
               </div>

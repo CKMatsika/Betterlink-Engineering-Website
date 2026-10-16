@@ -178,7 +178,7 @@ export default function MiningPage() {
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 grid-lines-bg opacity-40" />
           <div className="absolute top-1/3 right-0 w-[600px] h-[600px] rounded-full bg-[#E87B1E]/10 blur-[120px] pointer-events-none" />
-          <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[#1D6AE5]/8 blur-[100px] pointer-events-none" />
+          <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[#B40001]/8 blur-[100px] pointer-events-none" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 w-full">
             <div className="grid lg:grid-cols-2 gap-16 items-center">

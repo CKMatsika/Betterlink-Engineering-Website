@@ -11,7 +11,7 @@ export default function HomeCTASection() {
           <div
             className="absolute top-0 right-0 w-96 h-96 pointer-events-none"
             style={{
-              background: 'radial-gradient(circle, rgba(29,106,229,0.25) 0%, transparent 70%)',
+              background: 'radial-gradient(circle, rgba(226,83,11,0.25) 0%, transparent 70%)',
               filter: 'blur(40px)',
             }}
           />

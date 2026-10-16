@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
 
 const divisions = ['Technology', 'Mining', 'Energy', 'Construction & Civils'];
@@ -45,14 +46,14 @@ export default function HeroSection() {
       <div
         className="absolute top-[-15%] right-[-10%] w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(29,106,229,0.18) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(226,83,11,0.18) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
       />
       <div
         className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(29,106,229,0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(226,83,11,0.1) 0%, transparent 70%)',
           filter: 'blur(80px)',
         }}
       />
@@ -70,6 +71,18 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left: Editorial headline */}
           <div className="lg:col-span-8">
+            <div className="mb-10 inline-flex items-center justify-center bg-white rounded-2xl p-4 shadow-2xl ring-1 ring-white/10">
+              <Image
+                src="/assets/images/betterlink-logo.jpg"
+                alt="Betterlink Industries logo"
+                width={112}
+                height={172}
+                priority
+                className="object-contain"
+                style={{ height: 'auto' }}
+              />
+            </div>
+
             <span ref={labelRef} className="section-label mb-10 block" style={{ opacity: 1 }}>
               African Engineering &amp; Industrial Group
             </span>

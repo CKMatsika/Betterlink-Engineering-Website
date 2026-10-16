@@ -134,7 +134,7 @@ export default function WhyBetterlinkSection() {
               >
                 <div
                   className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
-                  style={{ backgroundColor: 'rgba(29,106,229,0.15)' }}
+                  style={{ backgroundColor: 'rgba(226,83,11,0.15)' }}
                 >
                   <Icon name={diff.icon} size={20} className="text-accent" />
                 </div>

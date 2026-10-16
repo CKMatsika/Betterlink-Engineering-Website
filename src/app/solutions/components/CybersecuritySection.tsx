@@ -90,7 +90,7 @@ export default function CybersecuritySection() {
                     <div className="flex items-center gap-2">
                       <div
                         className="w-7 h-7 rounded-md flex items-center justify-center"
-                        style={{ backgroundColor: 'rgba(29,106,229,0.2)' }}
+                        style={{ backgroundColor: 'rgba(226,83,11,0.2)' }}
                       >
                         <Icon name={step.icon} size={13} className="text-accent" />
                       </div>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const ACCENT = '#1d6ae5';
+const ACCENT = '#E2530B';
 
 const heroStats = [
   { value: 'Nationwide', label: 'Coverage from Harare HQ' },
@@ -133,13 +133,13 @@ export default function ConstructionPage() {
   return (
     <>
       <Header />
-      <main id="main-content" className="bg-[#0E1826]">
+      <main id="main-content" className="bg-[#150e0b]">
         {/* ── Hero ── */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 grid-lines-bg opacity-40" />
           <div
             className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
-            style={{ background: 'rgba(29,106,229,0.10)', filter: 'blur(120px)' }}
+            style={{ background: 'rgba(226,83,11,0.10)', filter: 'blur(120px)' }}
           />
           <div
             className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full pointer-events-none"
@@ -237,7 +237,7 @@ export default function ConstructionPage() {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0E1826] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#150e0b] to-transparent" />
         </section>
 
         {/* ── Civil works ── */}
@@ -264,7 +264,7 @@ export default function ConstructionPage() {
                 >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                    style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                    style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
                   >
                     <Icon name={item.icon} size={22} className="text-accent" />
                   </div>
@@ -284,7 +284,7 @@ export default function ConstructionPage() {
                 <div key={item.title} className="bg-primary rounded-2xl p-8 flex items-start gap-5">
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: 'rgba(29,106,229,0.15)' }}
+                    style={{ backgroundColor: 'rgba(226,83,11,0.15)' }}
                   >
                     <Icon name={item.icon} size={22} className="text-accent" />
                   </div>
@@ -325,7 +325,7 @@ export default function ConstructionPage() {
                 >
                   <div
                     className="w-11 h-11 rounded-lg flex items-center justify-center mb-5"
-                    style={{ backgroundColor: 'rgba(29,106,229,0.15)' }}
+                    style={{ backgroundColor: 'rgba(226,83,11,0.15)' }}
                   >
                     <Icon name={item.icon} size={20} className="text-accent" />
                   </div>
@@ -364,7 +364,7 @@ export default function ConstructionPage() {
                   >
                     <div
                       className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
-                      style={{ backgroundColor: 'rgba(29,106,229,0.1)' }}
+                      style={{ backgroundColor: 'rgba(226,83,11,0.1)' }}
                     >
                       <Icon name={detail.icon} size={18} className="text-accent" />
                     </div>

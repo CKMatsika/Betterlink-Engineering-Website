@@ -10,7 +10,7 @@ export default function ContactHero() {
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse, rgba(29,106,229,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(226,83,11,0.15) 0%, transparent 70%)',
           filter: 'blur(40px)',
         }}
       />
