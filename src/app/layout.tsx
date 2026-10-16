@@ -15,6 +15,7 @@ const manrope = localFont({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  themeColor: '#0a1628',
 };
 
 export const metadata: Metadata = {
@@ -63,10 +64,60 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.betterlinkengineering.co.zw/#organization',
+      name: 'Betterlink Engineering',
+      url: 'https://www.betterlinkengineering.co.zw',
+      logo: 'https://www.betterlinkengineering.co.zw/assets/images/app_logo.png',
+      description:
+        'Betterlink Engineering delivers software engineering, AI solutions, cybersecurity, ERP transformation, systems integration and ICT consulting for organisations across Africa.',
+      email: 'info@betterlinkengineering.co.zw',
+      areaServed: 'ZW',
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'General Enquiries',
+          email: 'info@betterlinkengineering.co.zw',
+        },
+        {
+          '@type': 'ContactPoint',
+          contactType: 'Sales',
+          email: 'sales@betterlinkengineering.co.zw',
+        },
+        {
+          '@type': 'ContactPoint',
+          contactType: 'Support',
+          email: 'support@betterlinkengineering.co.zw',
+        },
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.betterlinkengineering.co.zw/#website',
+      name: 'Betterlink Engineering',
+      url: 'https://www.betterlinkengineering.co.zw',
+      publisher: { '@id': 'https://www.betterlinkengineering.co.zw/#organization' },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={manrope.variable}>
-      <body className={manrope.className}>{children}</body>
+      <body className={manrope.className}>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

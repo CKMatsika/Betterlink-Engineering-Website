@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import Icon from '@/components/ui/AppIcon';
@@ -16,6 +16,9 @@ const navLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const didMount = useRef(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -32,6 +35,30 @@ export default function Header() {
     return () => {
       document.body.style.overflow = '';
     };
+  }, [menuOpen]);
+
+  // Move focus into the mobile menu on open, and restore it to the toggle on
+  // close. The didMount guard prevents stealing focus on initial page load.
+  useEffect(() => {
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
+    }
+    if (menuOpen) {
+      closeButtonRef.current?.focus();
+    } else {
+      menuButtonRef.current?.focus();
+    }
+  }, [menuOpen]);
+
+  // Close the mobile menu with the Escape key.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
   }, [menuOpen]);
 
   return (
@@ -84,6 +111,7 @@ export default function Header() {
 
           {/* Mobile Hamburger */}
           <button
+            ref={menuButtonRef}
             className="md:hidden text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
@@ -114,6 +142,7 @@ export default function Header() {
               </div>
             </Link>
             <button
+              ref={closeButtonRef}
               className="text-white p-2"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
