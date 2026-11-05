@@ -73,6 +73,25 @@ Build the application for production:
   npm run build
   ```
 
+## Website administration
+
+The admin portal is available at `/admin/login`; the footer links to it as
+**Admin Portal**. News & Insights supports creating drafts, editing articles,
+publishing, and deleting. Published articles appear at `/news` and `/news/<slug>`.
+
+To enable the portal in Supabase:
+
+1. Apply `supabase/migrations/0001_init.sql` to a new project. For an existing
+   project that already ran that migration, also apply
+   `supabase/migrations/0002_admin_roles.sql`.
+2. Create the administrator in Supabase Authentication, then set that user's
+   **app metadata** to `{ "role": "admin" }`. Do not use user-editable metadata.
+   Sign out and back in after changing the role.
+3. Disable public sign-ups in Supabase Authentication if accounts should only
+   be created by an administrator.
+4. Set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in the
+   deployment environment. Never expose the service-role key in the browser.
+
 ## 📚 Learn More
 
 To learn more about Next.js, take a look at the following resources:

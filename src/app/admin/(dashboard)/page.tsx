@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import { createClient } from '@/lib/supabase/server';
 
 const sections = [
   {
@@ -41,7 +42,20 @@ const sections = [
   },
 ];
 
-export default function AdminDashboardPage() {
+export default async function AdminDashboardPage() {
+  const supabase = await createClient();
+  const [
+    { count: publishedCount, error: publishedError },
+    { count: draftCount, error: draftError },
+  ] = await Promise.all([
+    supabase.from('posts').select('*', { count: 'exact', head: true }).eq('published', true),
+    supabase.from('posts').select('*', { count: 'exact', head: true }).eq('published', false),
+  ]);
+
+  if (publishedError || draftError) {
+    console.error('[admin] Could not load article counts:', publishedError ?? draftError);
+  }
+
   return (
     <div className="max-w-5xl">
       <h1 className="font-display text-3xl font-800 text-foreground mb-2">Dashboard</h1>
@@ -49,7 +63,20 @@ export default function AdminDashboardPage() {
         Manage all website content from one place.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="rounded-2xl border border-border bg-card p-5">
+          <p className="text-sm font-600 text-muted-foreground">Published articles</p>
+          <p className="mt-2 font-display text-3xl font-800 text-foreground">
+            {publishedCount ?? 0}
+          </p>
+        </div>
+        <div className="rounded-2xl border border-border bg-card p-5">
+          <p className="text-sm font-600 text-muted-foreground">Drafts</p>
+          <p className="mt-2 font-display text-3xl font-800 text-foreground">{draftCount ?? 0}</p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {sections.map((section) => (
           <Link
             key={section.href}

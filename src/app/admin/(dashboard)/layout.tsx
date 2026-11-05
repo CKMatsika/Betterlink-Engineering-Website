@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { isSupabaseConfigured } from '@/lib/supabase/config';
+import { isAdminUser } from '@/lib/supabase/admin-auth';
 import { signOutAction } from '@/app/admin/actions';
 import AdminNav from './components/AdminNav';
 import AdminNotConfigured from './components/AdminNotConfigured';
@@ -26,7 +27,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) {
+  if (!user || !isAdminUser(user)) {
     redirect('/admin/login');
   }
 

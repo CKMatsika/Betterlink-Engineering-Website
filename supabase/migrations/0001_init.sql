@@ -18,6 +18,16 @@ begin
 end;
 $$;
 
+create or replace function public.is_admin()
+returns boolean
+language sql
+stable
+set search_path = ''
+as $$
+  select coalesce((auth.jwt() -> 'app_metadata' ->> 'role') = 'admin', false);
+$$;
+grant execute on function public.is_admin() to authenticated;
+
 -- ─────────────────────────────────────────────────────────────
 -- projects
 -- ─────────────────────────────────────────────────────────────
@@ -150,39 +160,39 @@ create policy projects_public_read on public.projects
   for select using (published = true);
 drop policy if exists projects_admin_all on public.projects;
 create policy projects_admin_all on public.projects
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- services
 drop policy if exists services_public_read on public.services;
 create policy services_public_read on public.services
   for select using (published = true);
 create policy services_admin_all on public.services
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- gallery_items
 alter table public.gallery_items enable row level security;
 create policy gallery_public_read on public.gallery_items
   for select using (published = true);
 create policy gallery_admin_all on public.gallery_items
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- stats
 create policy stats_public_read on public.stats
   for select using (true);
 create policy stats_admin_all on public.stats
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- posts
 create policy posts_public_read on public.posts
   for select using (published = true);
 create policy posts_admin_all on public.posts
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- site_settings
 create policy site_settings_public_read on public.site_settings
   for select using (true);
 create policy site_settings_admin_all on public.site_settings
-  for all to authenticated using (true) with check (true);
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
 
 -- ═════════════════════════════════════════════════════════════
 -- Storage: public 'media' bucket for uploaded images
@@ -197,12 +207,14 @@ create policy media_public_read on storage.objects
 
 drop policy if exists media_admin_insert on storage.objects;
 create policy media_admin_insert on storage.objects
-  for insert to authenticated with check (bucket_id = 'media');
+  for insert to authenticated with check (bucket_id = 'media' and public.is_admin());
 
 drop policy if exists media_admin_update on storage.objects;
 create policy media_admin_update on storage.objects
-  for update to authenticated using (bucket_id = 'media');
+  for update to authenticated
+  using (bucket_id = 'media' and public.is_admin())
+  with check (bucket_id = 'media' and public.is_admin());
 
 drop policy if exists media_admin_delete on storage.objects;
 create policy media_admin_delete on storage.objects
-  for delete to authenticated using (bucket_id = 'media');
+  for delete to authenticated using (bucket_id = 'media' and public.is_admin());

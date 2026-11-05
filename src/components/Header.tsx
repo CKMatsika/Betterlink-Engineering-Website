@@ -2,14 +2,17 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import AppLogo from '@/components/ui/AppLogo';
+import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
 
 const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Divisions', href: '/#divisions' },
+  { label: 'Overview', href: '/#vision' },
+  { label: 'Structure', href: '/#structure' },
+  { label: 'Ecosystem', href: '/#ecosystem' },
+  { label: 'Milestones', href: '/#milestones' },
+  { label: 'Methodology', href: '/#approach' },
   { label: 'Gallery', href: '/gallery' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Insights', href: '/news' },
 ];
 
 export default function Header() {
@@ -20,7 +23,10 @@ export default function Header() {
   const didMount = useRef(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -36,8 +42,6 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  // Move focus into the mobile menu on open, and restore it to the toggle on
-  // close. The didMount guard prevents stealing focus on initial page load.
   useEffect(() => {
     if (!didMount.current) {
       didMount.current = true;
@@ -50,7 +54,6 @@ export default function Header() {
     }
   }, [menuOpen]);
 
-  // Close the mobile menu with the Escape key.
   useEffect(() => {
     if (!menuOpen) return;
     const onKeyDown = (event: KeyboardEvent) => {
@@ -63,125 +66,135 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled ? 'bg-primary/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md border-b border-[#dce2e9] shadow-sm'
+            : 'bg-white border-b border-[#dce2e9]/70'
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-          {/* Logo */}
+        <div className="wrap flex items-center justify-between h-[84px]">
+          {/* Brand Logo - getalfa.uk style */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-3.5 group select-none"
             aria-label="Betterlink Industries Home"
           >
-            <AppLogo
-              src="/assets/images/betterlink-logo.jpg"
-              width={30}
-              height={46}
-              className="rounded-md transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="flex flex-col">
-              <span className="font-display text-sm font-800 text-white leading-tight tracking-tight">
+            <div className="relative w-11 h-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/assets/images/betterlink-symbol.png"
+                alt="Betterlink Emblem"
+                width={44}
+                height={48}
+                priority
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="font-sans text-[0.9375rem] font-bold text-[#071529] tracking-[0.14em] uppercase leading-tight group-hover:text-[#e2530b] transition-colors">
                 Betterlink
               </span>
-              <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase leading-none">
+              <span className="text-[0.625rem] font-semibold text-[#606a78] tracking-[0.22em] uppercase leading-none mt-0.5">
                 Industries
               </span>
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks?.map((link) => (
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+            {navLinks.map((link) => (
               <Link
-                key={link?.href}
-                href={link?.href}
-                className="text-[0.8125rem] font-600 text-white/60 hover:text-white transition-colors duration-200 tracking-wide uppercase"
+                key={link.href}
+                href={link.href}
+                className="text-[0.8125rem] font-semibold text-[#606a78] hover:text-[#071529] transition-colors tracking-[0.06em] uppercase"
               >
-                {link?.label}
+                {link.label}
               </Link>
             ))}
-          </div>
+          </nav>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center gap-3">
-            <Link href="/contact" className="btn-primary text-[0.75rem]">
-              Request a Consultation
+          {/* Connect Action Button - getalfa.uk style */}
+          <div className="hidden sm:flex items-center gap-4">
+            <Link
+              href="/#contact"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-[#071529] text-[0.8125rem] font-semibold text-[#071529] tracking-[0.08em] uppercase hover:bg-[#071529] hover:text-white transition-all duration-200"
+            >
+              Connect
             </Link>
           </div>
 
-          {/* Mobile Hamburger */}
+          {/* Mobile Menu Toggle */}
           <button
             ref={menuButtonRef}
-            className="md:hidden text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+            className="lg:hidden text-[#071529] p-2 rounded-md hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-[#e2530b]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
-            <Icon name={menuOpen ? 'XMarkIcon' : 'Bars3Icon'} size={24} />
+            <Icon name={menuOpen ? 'XMarkIcon' : 'Bars3Icon'} size={26} />
           </button>
-        </nav>
+        </div>
       </header>
-      {/* Mobile Menu Overlay */}
+
+      {/* Mobile Drawer */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-primary/98 backdrop-blur-lg flex flex-col"
+          className="fixed inset-0 z-50 bg-[#071529] text-white flex flex-col p-6 animate-fade-in"
           role="dialog"
           aria-modal="true"
-          aria-label="Mobile navigation"
+          aria-label="Mobile navigation menu"
         >
-          <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between w-full">
+          <div className="flex items-center justify-between pb-6 border-b border-white/10">
             <Link href="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-              <AppLogo
-                src="/assets/images/betterlink-logo.jpg"
-                width={30}
-                height={46}
-                className="rounded-md"
+              <Image
+                src="/assets/images/betterlink-symbol.png"
+                alt="Betterlink Emblem"
+                width={36}
+                height={40}
+                className="object-contain"
               />
               <div className="flex flex-col">
-                <span className="font-display text-sm font-800 text-white leading-tight">
+                <span className="text-base font-bold text-white tracking-[0.14em] uppercase">
                   Betterlink
                 </span>
-                <span className="text-[0.6rem] font-700 tracking-[0.2em] text-white/50 uppercase">
+                <span className="text-[0.625rem] font-semibold text-white/60 tracking-[0.2em] uppercase">
                   Industries
                 </span>
               </div>
             </Link>
             <button
               ref={closeButtonRef}
-              className="text-white p-2"
+              className="text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#e2530b]"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
-              <Icon name="XMarkIcon" size={24} />
+              <Icon name="XMarkIcon" size={28} />
             </button>
           </div>
 
-          <nav className="flex-1 flex flex-col justify-center px-8 gap-2">
-            {navLinks?.map((link, i) => (
+          <nav className="flex flex-col gap-6 py-8 flex-1 overflow-y-auto">
+            {navLinks.map((link) => (
               <Link
-                key={link?.href}
-                href={link?.href}
+                key={link.href}
+                href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-3xl font-display font-800 text-white/80 hover:text-white py-4 border-b border-white/10 transition-colors"
-                style={{ animationDelay: `${i * 80}ms` }}
+                className="text-2xl font-light text-white/80 hover:text-white transition-colors tracking-tight"
               >
-                {link?.label}
+                {link.label}
               </Link>
             ))}
-            <div className="pt-8">
-              <Link
-                href="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="btn-primary w-full justify-center text-base"
-              >
-                Request a Consultation
-              </Link>
-            </div>
           </nav>
 
-          <div className="px-8 pb-10 text-xs text-white/30 font-600 tracking-widest uppercase">
-            © 2026 Betterlink Industries
+          <div className="pt-6 border-t border-white/10 flex flex-col gap-4">
+            <Link
+              href="/#contact"
+              onClick={() => setMenuOpen(false)}
+              className="w-full py-3 text-center rounded-full bg-[#e2530b] text-white text-sm font-semibold tracking-wider uppercase hover:bg-[#c14305] transition-colors"
+            >
+              Connect with Leadership
+            </Link>
+            <p className="text-xs text-white/50 text-center">
+              Harare · Zimbabwe · Pan-African Operations
+            </p>
           </div>
         </div>
       )}

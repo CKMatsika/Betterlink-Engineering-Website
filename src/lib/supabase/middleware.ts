@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import { isAdminUser } from './admin-auth';
 
 /**
  * Refreshes the Supabase auth session for the incoming request and guards the
@@ -41,14 +42,17 @@ export async function updateSession(request: NextRequest) {
   const isAdminRoute = pathname === '/admin' || pathname.startsWith('/admin/');
   const isLoginRoute = pathname === '/admin/login' || pathname.startsWith('/admin/login/');
 
-  if (isAdminRoute && !isLoginRoute && !user) {
+  if (isAdminRoute && !isLoginRoute && !isAdminUser(user)) {
     const redirectUrl = request.nextUrl.clone();
     redirectUrl.pathname = '/admin/login';
-    redirectUrl.searchParams.set('redirectedFrom', pathname);
+    redirectUrl.searchParams.set(
+      user ? 'error' : 'redirectedFrom',
+      user ? 'unauthorized' : pathname
+    );
     return NextResponse.redirect(redirectUrl);
   }
 
-  if (isLoginRoute && user) {
+  if (isLoginRoute && isAdminUser(user)) {
     const redirectUrl = request.nextUrl.clone();
     redirectUrl.pathname = '/admin';
     redirectUrl.search = '';

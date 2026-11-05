@@ -14,10 +14,6 @@ const sections: Record<string, { title: string; description: string }> = {
     title: 'Gallery',
     description: 'Upload and organise gallery images.',
   },
-  news: {
-    title: 'News & Insights',
-    description: 'Write and publish articles and company updates.',
-  },
   stats: {
     title: 'Statistics',
     description: 'Update the headline figures displayed on the site.',

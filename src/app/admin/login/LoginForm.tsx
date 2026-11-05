@@ -13,6 +13,7 @@ export default function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const unauthorized = searchParams.get('error') === 'unauthorized';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,6 +36,14 @@ export default function LoginForm() {
 
       if (signInError) {
         setError('Incorrect email or password. Please try again.');
+        setLoading(false);
+        return;
+      }
+
+      const { data: userData } = await supabase.auth.getUser();
+      if (userData.user?.app_metadata?.role !== 'admin') {
+        await supabase.auth.signOut();
+        setError('This account is not authorised to access the admin portal.');
         setLoading(false);
         return;
       }
@@ -83,6 +92,16 @@ export default function LoginForm() {
           className="form-input"
         />
       </div>
+
+      {unauthorized && !error && (
+        <div
+          role="alert"
+          className="mb-5 rounded-lg border px-4 py-3 text-sm font-600"
+          style={{ borderColor: '#FCD34D', backgroundColor: '#FFFBEB', color: '#92400E' }}
+        >
+          This account is signed in but does not have administrator access.
+        </div>
+      )}
 
       {error && (
         <div

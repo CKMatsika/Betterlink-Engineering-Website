@@ -3,17 +3,20 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/app/components/HeroSection';
-import DivisionsSection from '@/app/components/DivisionsSection';
-import CapabilitiesSection from '@/app/components/CapabilitiesSection';
-import ProjectsSection from '@/app/components/ProjectsSection';
-import MethodologySection from '@/app/components/MethodologySection';
-import WhyBetterlinkSection from '@/app/components/WhyBetterlinkSection';
+import OpeningFilm from '@/app/components/OpeningFilm';
+import VisionSection from '@/app/components/VisionSection';
+import GroupStructureSection from '@/app/components/GroupStructureSection';
+import ManifestoSection from '@/app/components/ManifestoSection';
+import EcosystemSection from '@/app/components/EcosystemSection';
+import MilestonesSection from '@/app/components/MilestonesSection';
+import ApproachSection from '@/app/components/ApproachSection';
+import LeadershipSection from '@/app/components/LeadershipSection';
 import HomeCTASection from '@/app/components/HomeCTASection';
 
 export const metadata: Metadata = {
   title: 'Betterlink Industries — Technology, Mining, Energy & Construction',
   description:
-    'Betterlink Industries is a Zimbabwean multi-disciplinary group delivering technology & software, mining & industrial, energy, and construction & civils solutions across Africa.',
+    'Betterlink Industries is a Zimbabwean multi-disciplinary industrial group delivering technology & software, heavy mining machinery, utility solar energy, and base station civil infrastructure across Africa.',
   alternates: {
     canonical: 'https://www.betterlinkengineering.co.zw',
   },
@@ -22,14 +25,20 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <Header />
       <main id="main-content">
         <HeroSection />
-        <DivisionsSection />
-        <CapabilitiesSection />
-        <ProjectsSection />
-        <MethodologySection />
-        <WhyBetterlinkSection />
+        <OpeningFilm />
+        <VisionSection />
+        <GroupStructureSection />
+        <ManifestoSection />
+        <EcosystemSection />
+        <MilestonesSection />
+        <ApproachSection />
+        <LeadershipSection />
         <HomeCTASection />
       </main>
       <Footer />

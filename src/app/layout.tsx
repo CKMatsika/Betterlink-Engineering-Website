@@ -15,7 +15,7 @@ const manrope = localFont({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#180d0a',
+  themeColor: '#071529',
 };
 
 export const metadata: Metadata = {
@@ -58,7 +58,11 @@ export const metadata: Metadata = {
     images: ['/assets/images/app_logo.png'],
   },
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/assets/images/betterlink-symbol.png', type: 'image/png' },
+    ],
+    apple: [{ url: '/assets/images/betterlink-symbol.png' }],
   },
   alternates: {
     canonical: 'https://www.betterlinkengineering.co.zw',

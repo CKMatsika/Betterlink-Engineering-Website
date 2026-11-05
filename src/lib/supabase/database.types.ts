@@ -49,6 +49,7 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       services: {
         Row: {
@@ -84,6 +85,7 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       gallery_items: {
         Row: {
@@ -113,6 +115,7 @@ export interface Database {
           sort_order?: number;
           created_at?: string;
         };
+        Relationships: [];
       };
       stats: {
         Row: {
@@ -145,6 +148,7 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       posts: {
         Row: {
@@ -183,6 +187,7 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       site_settings: {
         Row: {
@@ -200,6 +205,7 @@ export interface Database {
           value?: Json;
           updated_at?: string;
         };
+        Relationships: [];
       };
     };
     Views: Record<string, never>;
