@@ -81,13 +81,13 @@ const structuredData = {
       logo: 'https://www.betterlinkengineering.co.zw/assets/images/app_logo.png',
       description:
         'Betterlink Industries is a Zimbabwean multi-disciplinary group delivering technology & software, mining & industrial, energy, and construction & civils solutions across Africa.',
-      email: 'info@betterlinkengineering.co.zw',
+      email: 'clemence@betterlinkengineering.co.zw',
       areaServed: 'ZW',
       contactPoint: [
         {
           '@type': 'ContactPoint',
           contactType: 'General Enquiries',
-          email: 'info@betterlinkengineering.co.zw',
+          email: 'clemence@betterlinkengineering.co.zw',
         },
         {
           '@type': 'ContactPoint',

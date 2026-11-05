@@ -109,10 +109,10 @@ export default function HomeCTASection() {
                 Direct Electronic Mail
               </p>
               <a
-                href="mailto:info@betterlinkengineering.co.zw"
+                href="mailto:clemence@betterlinkengineering.co.zw"
                 className="text-white hover:text-[#e2530b] font-medium transition-colors text-base"
               >
-                info@betterlinkengineering.co.zw
+                clemence@betterlinkengineering.co.zw
               </a>
             </div>
 

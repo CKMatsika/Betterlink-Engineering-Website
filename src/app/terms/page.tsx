@@ -136,10 +136,10 @@ export default function TermsPage() {
               <p className="text-muted-foreground leading-relaxed">
                 For questions about these terms, contact us at{' '}
                 <a
-                  href="mailto:info@betterlinkengineering.co.zw"
+                  href="mailto:clemence@betterlinkengineering.co.zw"
                   className="text-accent font-600 hover:underline"
                 >
-                  info@betterlinkengineering.co.zw
+                  clemence@betterlinkengineering.co.zw
                 </a>{' '}
                 or use our{' '}
                 <Link href="/contact" className="text-accent font-600 hover:underline">

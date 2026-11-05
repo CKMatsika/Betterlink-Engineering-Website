@@ -108,10 +108,10 @@ export default function Footer() {
               <p>Harare, Zimbabwe</p>
               <p>
                 <a
-                  href="mailto:info@betterlinkengineering.co.zw"
+                  href="mailto:clemence@betterlinkengineering.co.zw"
                   className="hover:text-[#e2530b] transition-colors break-words font-medium"
                 >
-                  info@betterlinkengineering.co.zw
+                  clemence@betterlinkengineering.co.zw
                 </a>
               </p>
               <div className="pt-2">

@@ -58,9 +58,9 @@ export default function MiningCTA() {
         <div className="grid sm:grid-cols-3 gap-4">
           {[
             {
-              label: 'General Enquiries',
-              value: 'info@betterlinkengineering.co.zw',
-              href: 'mailto:info@betterlinkengineering.co.zw',
+              label: 'General & Executive Enquiries',
+              value: 'clemence@betterlinkengineering.co.zw',
+              href: 'mailto:clemence@betterlinkengineering.co.zw',
             },
             {
               label: 'Sales & Quotations',

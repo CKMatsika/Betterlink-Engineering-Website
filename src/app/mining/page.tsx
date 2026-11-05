@@ -143,29 +143,34 @@ const capabilities = [
 
 const projectPhotos = [
   {
-    src: '/assets/images/WhatsApp_Image_2026-10-05_at_8.04.41_AM-1791182438504.jpeg',
-    alt: 'Electrical control panel installation — industrial switchgear and wiring completed on site',
-    caption: 'Electrical & Control Systems',
+    src: '/assets/images/work/boiler-installation-site-dual.jpg',
+    alt: 'Dual vertical industrial steam boilers installed on steel platform at a mining site in Zimbabwe',
+    caption: 'Dual Boiler Installation',
   },
   {
-    src: '/assets/images/WhatsApp_Image_2026-10-05_at_8.04.40_AM__2_-1791182436859.jpeg',
-    alt: 'Boiler fabrication in progress — steel boiler vessel being assembled in workshop',
+    src: '/assets/images/work/019-photo-19.jpeg',
+    alt: 'Boiler fabrication in progress — steel boiler vessel rolled and welded in Betterlink workshop',
     caption: 'Boiler Fabrication',
   },
   {
-    src: '/assets/images/WhatsApp_Image_2026-10-05_at_8.04.39_AM__1_-1791182447730.jpeg',
-    alt: 'Completed boiler loaded on transport truck for delivery to mining site',
+    src: '/assets/images/work/078-photo-78.jpg',
+    alt: 'Completed industrial boiler plant and high-pressure steam distribution network on mine site',
+    caption: 'Operational Boiler Plant',
+  },
+  {
+    src: '/assets/images/work/032-photo-32.jpeg',
+    alt: '1-ton industrial boiler hydrostatically pressure tested and dispatched to mine site',
     caption: 'Boiler Transportation',
   },
   {
-    src: '/assets/images/6b0fe249-a579-4161-8988-4e3adc984c67-0.5008048983456631-1791182470473.jpeg',
-    alt: 'Installed mining processing plant with control panel mounted on blue steel structure at operational site',
-    caption: 'Processing Plant Installation',
+    src: '/assets/images/work/203-photo-203.jpeg',
+    alt: 'Weatherproof industrial control console with digital pressure monitoring on site',
+    caption: 'Electrical & Control Systems',
   },
   {
-    src: '/assets/images/66677be2-c7c6-47e0-8d10-e408483b7928-1776844328907-zjteup2x3c-1791182474566.jpeg',
-    alt: 'Boiler installation at mining site with black shed structure in background',
-    caption: 'Boiler Installation',
+    src: '/assets/images/work/079-photo-79.jpg',
+    alt: 'Installed mining processing plant and wash plant structure at operational mine site',
+    caption: 'Processing Plant Installation',
   },
 ];
 

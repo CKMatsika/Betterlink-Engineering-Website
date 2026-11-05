@@ -11,132 +11,225 @@ interface GalleryItem {
   image: string;
   alt: string;
   span?: 'wide' | 'tall' | 'normal';
+  featured?: boolean;
 }
 
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: 'Industrial Boiler Fabrication',
-    category: 'Boilers',
+    title: 'Dual Vertical Boiler Installation & Commissioning',
+    category: 'Boiler Installation',
     description:
-      'Custom 1-ton high-pressure boiler fabricated and certified for a mining operation in Mashonaland.',
-    image: '/assets/images/gallery/rocket_gen_img_177678792-1772649599516.png',
-    alt: 'Large industrial boiler fabricated from steel with pressure gauges and pipe fittings in a workshop',
-    span: 'wide',
+      'Turnkey installation of dual vertical steam boiler vessels mounted on heavy structural steel staging with operator platform, access stairway, and automated control instrumentation at a gold mining site in Zimbabwe.',
+    image: '/assets/images/work/boiler-installation-site-dual.jpg',
+    alt: 'Dual vertical industrial steam boilers installed on blue structural steel support platform at a mining site',
+    span: 'tall',
+    featured: true,
   },
   {
     id: 2,
-    title: 'Gold Wash Plant Installation',
-    category: 'Mining Plants',
+    title: '1-Ton Industrial Boiler Shell Fabrication',
+    category: 'Boiler Fabrication',
     description:
-      'Complete gold wash plant installed and commissioned for a small-scale miner in Midlands Province.',
-    image: '/assets/images/gallery/rocket_gen_img_1ebece8ce-1773992876240.png',
-    alt: 'Gold wash plant with sluice boxes and water pumps installed at a mining site in Zimbabwe',
-    span: 'tall',
+      'High-pressure boiler vessel rolling and precision submerged arc welding in the Betterlink industrial workshop, conforming to ASME Section VIII and factory inspector standards.',
+    image: '/assets/images/work/019-photo-19.jpeg',
+    alt: 'Heavy steel boiler vessel shell fabricated in the Betterlink workshop',
+    span: 'wide',
+    featured: true,
   },
   {
     id: 3,
-    title: 'Boiler Pipe Welding & Assembly',
-    category: 'Boilers',
+    title: 'Operational Mine-Site Boiler & Processing Facility',
+    category: 'Boiler Installation',
     description:
-      'Precision pipe welding and pressure vessel assembly for a 500 KG low-pressure steam boiler.',
-    image: '/assets/images/gallery/rocket_gen_img_155c47fe7-1771886389388.png',
-    alt: 'Welder performing precision pipe welding on a boiler pressure vessel in a fabrication workshop',
+      'Full boiler plant commissioning including high-pressure steam reticulation, safety blow-off valves, and chimney stack for mineral elution processing.',
+    image: '/assets/images/work/078-photo-78.jpg',
+    alt: 'Completed industrial boiler plant in operation at a mining facility in Zimbabwe',
+    span: 'wide',
+    featured: true,
   },
   {
     id: 4,
-    title: 'Chrome Wash Plant',
-    category: 'Mining Plants',
+    title: 'On-Site Boiler Assembly & Rigging',
+    category: 'Boiler Installation',
     description:
-      'Chrome ore processing plant with spiral concentrators and jig separators for a Midlands chrome miner.',
-    image: '/assets/images/gallery/rocket_gen_img_1e71c3771-1768430128386.png',
-    alt: 'Chrome wash plant with spiral concentrators and water channels processing chrome ore at a mining site',
+      'Rigging, positioning, and mechanical alignment of a steam boiler on reinforced concrete foundation plinths at an active extraction site.',
+    image: '/assets/images/work/002-photo-2.jpeg',
+    alt: 'Boiler unit being installed on site by Betterlink engineering technicians',
+    span: 'normal',
   },
   {
     id: 5,
-    title: 'Trommel Screen Fabrication',
-    category: 'Equipment',
+    title: 'Gold & Chrome Wash Plant Installation',
+    category: 'Mining Processing Plants',
     description:
-      'Heavy-duty trommel screen fabricated for alluvial gold recovery, rated for 20 tonnes per hour.',
-    image: '/assets/images/gallery/rocket_gen_img_1617548a8-1783832965958.png',
-    alt: 'Rotating trommel screen drum fabricated from perforated steel for alluvial gold mining operations',
+      'Complete alluvial wash plant system with vibrating feed hopper, slurry distribution, and multi-stage sluice recovery units.',
+    image: '/assets/images/work/079-photo-79.jpg',
+    alt: 'Large-scale mineral wash plant and processing infrastructure on site',
     span: 'wide',
+    featured: true,
   },
   {
     id: 6,
-    title: 'Boiler Room Installation',
-    category: 'Installation',
+    title: 'Heavy-Duty Rotary Trommel Screen Fabrication',
+    category: 'Mining Processing Plants',
     description:
-      'Full boiler room fit-out including steam distribution, safety valves, and control panel wiring.',
-    image: '/assets/images/gallery/rocket_gen_img_15217b684-1772166147520.png',
-    alt: 'Industrial boiler room with steam pipes, pressure gauges, safety valves and electrical control panels',
+      'Perforated steel rotary trommel screen built for high-throughput ore washing, separation, and alluvial gold recovery.',
+    image: '/assets/images/work/039-photo-39.jpeg',
+    alt: 'Fabricated heavy mining trommel screen and structural components in workshop',
+    span: 'normal',
   },
   {
     id: 7,
-    title: 'Electrical Control Systems',
-    category: 'Electrical',
+    title: '500 KG Low-Pressure Boiler Unit Dispatched',
+    category: 'Boiler Fabrication',
     description:
-      'PLC-based control panel designed and installed for automated boiler monitoring and safety shutdown.',
-    image: '/assets/images/gallery/rocket_gen_img_12b804c08-1773054350694.png',
-    alt: 'Electrical control panel with PLC modules, circuit breakers and wiring for industrial boiler automation',
+      'Completed 500 KG horizontal steam boiler loaded onto transport truck, hydrostatically pressure tested and certified by regulatory inspectors.',
+    image: '/assets/images/work/032-photo-32.jpeg',
+    alt: 'Completed industrial boiler packaged and secured for delivery to client mine',
+    span: 'normal',
   },
   {
     id: 8,
-    title: 'Mining Processing Plant',
-    category: 'Mining Plants',
+    title: 'Automated Electrical Switchgear & Control Panels',
+    category: 'Electrical & Control Systems',
     description:
-      'Modular processing plant for a medium-scale gold miner — includes crushing, milling and concentration.',
-    image: '/assets/images/gallery/rocket_gen_img_4ffb2f2c7-1791181819691.png',
-    alt: 'Modular gold mining processing plant with ball mill, crusher and concentration equipment on site',
-    span: 'tall',
+      'Weatherproof industrial control console with digital pressure monitoring, emergency stop interlocks, and generator automatic transfer switch (ATS).',
+    image: '/assets/images/work/203-photo-203.jpeg',
+    alt: 'Electrical control panel mounted on structural steel frame at mining plant',
+    span: 'normal',
   },
   {
     id: 9,
-    title: 'Boiler Maintenance & NDT',
-    category: 'Maintenance',
+    title: 'Boiler Pressure Vessel Welding & Fitting',
+    category: 'Boiler Fabrication',
     description:
-      'Non-destructive testing and annual inspection of a high-pressure boiler at a tobacco processing facility.',
-    image: '/assets/images/gallery/rocket_gen_img_1a283ed07-1772116686207.png',
-    alt: 'Technician performing non-destructive testing on a boiler pressure vessel using ultrasonic equipment',
+      'Precision welding of dished ends and nozzle stubs on thick-gauge boiler steel plate under certified quality control inspection.',
+    image: '/assets/images/work/020-photo-20.jpeg',
+    alt: 'Boiler plate welding and fitting inside fabrication workshop',
+    span: 'normal',
   },
   {
     id: 10,
-    title: 'Structural Steel Fabrication',
-    category: 'Equipment',
+    title: 'Full Boiler Plant Room Housing',
+    category: 'Boiler Installation',
     description:
-      'Heavy structural steel framework for a processing plant support structure, hot-dip galvanised.',
-    image: '/assets/images/gallery/rocket_gen_img_1f4e20a7a-1768951888988.png',
-    alt: 'Structural steel framework being assembled in a fabrication yard for a mining plant support structure',
+      'Installed boiler system with protective weather enclosure, steam distribution headers, and feed water treatment tanks at a Midlands mine.',
+    image: '/assets/images/work/046-photo-46.jpeg',
+    alt: 'Industrial boiler plant installation with protective enclosure and piping',
+    span: 'tall',
   },
   {
     id: 11,
-    title: 'Boiler Transportation & Rigging',
-    category: 'Installation',
+    title: 'Boiler Refurbishment & Ultrasonic NDT Inspection',
+    category: 'Maintenance & NDT',
     description:
-      'Safe transportation and rigging of a 1-ton boiler to a remote mining site in Mashonaland West.',
-    image: '/assets/images/gallery/rocket_gen_img_141be15ce-1772166146550.png',
-    alt: 'Heavy industrial boiler being lifted by crane and rigged for transportation to a remote mining site',
-    span: 'wide',
+      'Comprehensive non-destructive thickness testing, tube bundle replacement, and statutory hydrostatic testing for operational license renewal.',
+    image: '/assets/images/work/071-photo-71.jpg',
+    alt: 'Betterlink engineers inspecting and maintaining industrial boiler equipment',
+    span: 'normal',
   },
   {
     id: 12,
-    title: 'Pump Station Installation',
-    category: 'Installation',
+    title: 'Industrial Elution Column & Steel Framework',
+    category: 'Mining Processing Plants',
     description:
-      'High-volume water pump station installed for a gold wash plant water supply and recirculation system.',
-    image: '/assets/images/gallery/rocket_gen_img_17e8c7d6d-1772623686340.png',
-    alt: 'Industrial pump station with centrifugal pumps and pipework installed for a mining water supply system',
+      'Fabrication of vertical stainless steel elution columns and hot-dip galvanized structural staging for carbon-in-leach (CIL) processing.',
+    image: '/assets/images/work/181-photo-181.jpeg',
+    alt: 'Processing plant structural frame and elution equipment at mine site',
+    span: 'normal',
+  },
+  {
+    id: 13,
+    title: 'Boiler Steam Piping Reticulation',
+    category: 'Boiler Installation',
+    description:
+      'High-temperature steam line fabrication, thermal lagging insulation, pressure reducing stations, and condensate traps.',
+    image: '/assets/images/work/206-photo-206.jpeg',
+    alt: 'Boiler steam piping and control valves installed at operational site',
+    span: 'normal',
+  },
+  {
+    id: 14,
+    title: 'Generator Set & Industrial Power Integration',
+    category: 'Electrical & Control Systems',
+    description:
+      'Heavy-duty backup diesel generator integration, synchronization panels, and electrical reticulation for uninterrupted plant processing.',
+    image: '/assets/images/work/024-photo-24.jpeg',
+    alt: 'Industrial generator set and power distribution equipment on site',
+    span: 'normal',
+  },
+  {
+    id: 15,
+    title: 'Trommel Screen Barrel & Drive Assembly',
+    category: 'Mining Processing Plants',
+    description:
+      'Fabrication of heavy rubber-lined trommel barrel, chain drive gearboxes, and high-pressure water spray manifolds for clay and gravel washing.',
+    image: '/assets/images/work/060-photo-60.jpeg',
+    alt: 'Trommel screen barrel and mechanical drive assembly in workshop',
+    span: 'normal',
+  },
+  {
+    id: 16,
+    title: 'Structural Steel Staging & Catwalks',
+    category: 'Civils & Infrastructure',
+    description:
+      'Modular steel access walkways, safety handrails, and equipment support structures fabricated for mineral processing facilities.',
+    image: '/assets/images/work/074-photo-74.jpg',
+    alt: 'Heavy structural steel staging and catwalks manufactured by Betterlink',
+    span: 'wide',
+  },
+  {
+    id: 17,
+    title: 'Boiler Flue Gas Stack & Cyclone Separator',
+    category: 'Boiler Fabrication',
+    description:
+      'Custom particulate collection cyclones and industrial chimney stacks engineered to meet environmental emissions guidelines.',
+    image: '/assets/images/work/075-photo-75.jpg',
+    alt: 'Boiler flue gas chimney stack and structural support framework',
+    span: 'tall',
+  },
+  {
+    id: 18,
+    title: 'Mine Water Recirculation & High-Volume Pumps',
+    category: 'Mining Processing Plants',
+    description:
+      'Multi-stage centrifugal slurry and water pumps installed with HDPE piping networks for closed-loop wash plant water recycling.',
+    image: '/assets/images/work/077-photo-77.jpg',
+    alt: 'Industrial pump manifold and water reticulation system at mine site',
+    span: 'normal',
+  },
+  {
+    id: 19,
+    title: 'Boiler Dished End Forming & Edge Preparation',
+    category: 'Boiler Fabrication',
+    description:
+      'Heavy hydraulic pressing and beveling of boiler pressure vessel end caps prior to circumferential seam welding.',
+    image: '/assets/images/work/058-photo-58.jpeg',
+    alt: 'Heavy steel boiler vessel end plate fabrication in progress',
+    span: 'normal',
+  },
+  {
+    id: 20,
+    title: 'Complete Gold Recovery Circuit Handover',
+    category: 'Mining Processing Plants',
+    description:
+      'Turnkey commissioning of crushing, milling, screening, and elution plant with full on-site operator training and safety certification.',
+    image: '/assets/images/work/080-photo-80.jpg',
+    alt: 'Operational gold recovery plant handed over to mining client in Zimbabwe',
+    span: 'wide',
+    featured: true,
   },
 ];
 
 const categories = [
   'All',
-  'Boilers',
-  'Mining Plants',
-  'Equipment',
-  'Installation',
-  'Electrical',
-  'Maintenance',
+  'Boiler Fabrication',
+  'Boiler Installation',
+  'Mining Processing Plants',
+  'Electrical & Control Systems',
+  'Maintenance & NDT',
+  'Civils & Infrastructure',
 ];
 
 export default function GalleryGrid() {
@@ -149,18 +242,18 @@ export default function GalleryGrid() {
       : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="bg-[#07101F] py-20">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Category filter */}
-        <div className="flex flex-wrap gap-3 mb-12">
+    <section className="bg-[#071529] py-20 lg:py-28 text-white min-h-screen">
+      <div className="wrap">
+        {/* Category filter pills */}
+        <div className="flex flex-wrap gap-2.5 mb-14">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 rounded-full text-xs font-700 tracking-widest uppercase transition-all duration-200 ${
+              className={`px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-200 ${
                 activeCategory === cat
-                  ? 'bg-[#E87B1E] text-white shadow-[0_4px_16px_rgba(232,123,30,0.4)]'
-                  : 'border border-white/15 text-white/50 hover:border-[#E87B1E]/50 hover:text-white/80'
+                  ? 'bg-[#e2530b] text-white shadow-lg'
+                  : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10 hover:text-white'
               }`}
             >
               {cat}
@@ -168,138 +261,96 @@ export default function GalleryGrid() {
           ))}
         </div>
 
-        {/* Bento-style masonry grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
+        {/* Masonry / Bento Grid */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
           {filtered.map((item) => (
             <div
               key={item.id}
-              className={`break-inside-avoid group relative overflow-hidden rounded-xl border border-white/8 bg-white/4 cursor-pointer ${
-                item.span === 'wide' ? 'sm:col-span-2' : ''
-              }`}
+              className="break-inside-avoid group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 cursor-pointer transition-all duration-300 hover:border-[#e2530b] hover:shadow-2xl"
               onClick={() => setLightboxItem(item)}
             >
               <div
-                className={`relative w-full overflow-hidden ${item.span === 'tall' ? 'h-80' : 'h-56'}`}
+                className={`relative w-full overflow-hidden ${
+                  item.span === 'tall' ? 'h-96' : item.span === 'wide' ? 'h-72' : 'h-64'
+                }`}
               >
                 <Image
                   src={item.image}
                   alt={item.alt}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#07101F]/90 via-[#07101F]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                {/* Category badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full bg-[#E87B1E]/90 text-white text-[0.65rem] font-700 tracking-widest uppercase">
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071529] via-[#071529]/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+
+                {/* Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="px-3 py-1 rounded-full bg-[#071529]/80 backdrop-blur-md border border-white/15 text-[#e2530b] text-[0.6875rem] font-bold tracking-wider uppercase">
                     {item.category}
                   </span>
                 </div>
-                {/* Expand icon */}
-                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
-                    />
-                  </svg>
-                </div>
-              </div>
 
-              {/* Card info */}
-              <div className="p-5">
-                <h3 className="text-white font-700 text-sm mb-1 leading-snug">{item.title}</h3>
-                <p className="text-white/45 text-xs leading-relaxed">{item.description}</p>
+                {/* Text overlay bottom */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug mb-1 group-hover:text-[#e2530b] transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-white/70 line-clamp-2 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
-
-        {/* CTA */}
-        <div className="mt-20 text-center">
-          <div className="inline-block p-px rounded-2xl bg-gradient-to-br from-[#E87B1E]/40 to-[#B40001]/20">
-            <div className="bg-[#07101F] rounded-2xl px-10 py-10">
-              <p className="text-[0.6875rem] font-800 tracking-[0.35em] uppercase text-[#E87B1E] mb-4">
-                Start Your Project
-              </p>
-              <h2 className="font-display text-white text-3xl lg:text-4xl font-800 mb-4 leading-tight">
-                Ready to work with us?
-              </h2>
-              <p className="text-white/50 text-sm leading-relaxed mb-8 max-w-md mx-auto">
-                Contact Betterlink Engineering for a consultation on your boiler, mining plant or
-                industrial engineering project.
-              </p>
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(232,123,30,0.4)]"
-              >
-                Request a Quotation
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* Lightbox */}
+      {/* Lightbox Modal */}
       {lightboxItem && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-[#071529]/95 backdrop-blur-lg flex items-center justify-center p-4 sm:p-8 animate-fade-in"
+          role="dialog"
+          aria-modal="true"
           onClick={() => setLightboxItem(null)}
         >
           <div
-            className="relative max-w-4xl w-full bg-[#0D1B2E] rounded-2xl overflow-hidden border border-white/10"
+            className="relative max-w-4xl w-full bg-[#0b1b33] border border-white/15 rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-[55vh]">
+            {/* Close Button */}
+            <button
+              onClick={() => setLightboxItem(null)}
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-[#e2530b] transition-colors"
+              aria-label="Close modal"
+            >
+              ✕
+            </button>
+
+            {/* Lightbox Image */}
+            <div className="relative h-[clamp(320px,55vh,600px)] w-full bg-black">
               <Image
                 src={lightboxItem.image}
                 alt={lightboxItem.alt}
                 fill
-                className="object-cover"
-                sizes="100vw"
+                className="object-contain"
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                priority
               />
             </div>
-            <div className="p-6 flex items-start justify-between gap-4">
-              <div>
-                <span className="inline-block px-3 py-1 rounded-full bg-[#E87B1E]/20 text-[#E87B1E] text-[0.65rem] font-700 tracking-widest uppercase mb-3">
-                  {lightboxItem.category}
-                </span>
-                <h3 className="text-white font-700 text-lg mb-2">{lightboxItem.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{lightboxItem.description}</p>
-              </div>
-              <button
-                onClick={() => setLightboxItem(null)}
-                className="flex-shrink-0 w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
-                aria-label="Close lightbox"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+
+            {/* Details */}
+            <div className="p-6 sm:p-8">
+              <span className="text-xs font-bold text-[#e2530b] uppercase tracking-widest block mb-2">
+                {lightboxItem.category}
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">
+                {lightboxItem.title}
+              </h2>
+              <p className="text-sm text-white/80 leading-relaxed max-w-3xl">
+                {lightboxItem.description}
+              </p>
             </div>
           </div>
         </div>

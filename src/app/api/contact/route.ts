@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export const runtime = 'nodejs';
 
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'info@betterlinkengineering.co.zw';
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'clemence@betterlinkengineering.co.zw';
 const FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ||
   'Betterlink Engineering Website <website@betterlinkengineering.co.zw>';
@@ -133,7 +133,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          'The enquiry service is temporarily unavailable. Please email info@betterlinkengineering.co.zw directly.',
+          'The enquiry service is temporarily unavailable. Please email clemence@betterlinkengineering.co.zw directly.',
       },
       { status: 503 }
     );
@@ -198,7 +198,7 @@ export async function POST(request: Request) {
         {
           ok: false,
           error:
-            'We could not send your enquiry right now. Please try again or email info@betterlinkengineering.co.zw directly.',
+            'We could not send your enquiry right now. Please try again or email clemence@betterlinkengineering.co.zw directly.',
         },
         { status: 502 }
       );
@@ -211,7 +211,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          'We could not send your enquiry right now. Please try again or email info@betterlinkengineering.co.zw directly.',
+          'We could not send your enquiry right now. Please try again or email clemence@betterlinkengineering.co.zw directly.',
       },
       { status: 502 }
     );

@@ -10,32 +10,32 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    src: '/assets/images/mining-hero/01.jpg',
-    alt: 'Industrial boiler installation in progress at a mining site',
+    src: '/assets/images/work/boiler-installation-site-dual.jpg',
+    alt: 'Dual vertical industrial steam boilers installed on steel platform at a mining site',
   },
   {
-    src: '/assets/images/mining-hero/02.jpg',
-    alt: 'Heavy-duty processing machinery fabricated in the Betterlink workshop',
+    src: '/assets/images/work/078-photo-78.jpg',
+    alt: 'Heavy industrial boiler plant and piping installed on mine site in Zimbabwe',
   },
   {
-    src: '/assets/images/mining-hero/03.jpg',
-    alt: 'Completed boiler unit prepared for delivery to a mine site',
+    src: '/assets/images/work/019-photo-19.jpeg',
+    alt: 'Boiler shell welding and fabrication in the Betterlink workshop',
   },
   {
-    src: '/assets/images/mining-hero/04.jpg',
-    alt: 'Fabricated mineral processing equipment on site',
+    src: '/assets/images/work/079-photo-79.jpg',
+    alt: 'Mining processing plant and wash plant installations across Zimbabwe',
   },
   {
-    src: '/assets/images/mining-hero/05.jpg',
-    alt: 'Boiler service and maintenance work carried out by Betterlink engineers',
+    src: '/assets/images/work/032-photo-32.jpeg',
+    alt: 'Completed 1-ton industrial boiler prepared for delivery to mine site',
   },
   {
-    src: '/assets/images/mining-hero/06.jpg',
-    alt: 'Mining processing plant installation with control systems',
+    src: '/assets/images/work/203-photo-203.jpeg',
+    alt: 'Mining processing plant installation with automated electrical control systems',
   },
   {
-    src: '/assets/images/mining-hero/07.jpg',
-    alt: 'Boiler systems installed at an operational mining site in Zimbabwe',
+    src: '/assets/images/work/002-photo-2.jpeg',
+    alt: 'Boiler systems installed and commissioned at an operational mining site',
   },
 ];
 

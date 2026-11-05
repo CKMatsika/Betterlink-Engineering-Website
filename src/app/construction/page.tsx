@@ -124,8 +124,8 @@ const contactDetails = [
   {
     icon: 'EnvelopeIcon',
     label: 'Email',
-    value: 'info@betterlinkengineering.co.zw',
-    href: 'mailto:info@betterlinkengineering.co.zw',
+    value: 'clemence@betterlinkengineering.co.zw',
+    href: 'mailto:clemence@betterlinkengineering.co.zw',
   },
 ];
 

@@ -105,7 +105,7 @@ export default function ContactForm() {
     } catch {
       setSubmitting(false);
       setError(
-        'We could not reach the server. Please check your connection and try again, or email info@betterlinkengineering.co.zw.'
+        'We could not reach the server. Please check your connection and try again, or email clemence@betterlinkengineering.co.zw.'
       );
     }
   };

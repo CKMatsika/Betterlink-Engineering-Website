@@ -17,9 +17,21 @@ const servicesList = [
 ];
 
 const contactEmails = [
-  { label: 'General Enquiries', email: 'info@betterlinkengineering.co.zw', icon: 'EnvelopeIcon' },
-  { label: 'Sales', email: 'sales@betterlinkengineering.co.zw', icon: 'CurrencyDollarIcon' },
-  { label: 'Support', email: 'support@betterlinkengineering.co.zw', icon: 'LifebuoyIcon' },
+  {
+    label: 'General & Executive Enquiries',
+    email: 'clemence@betterlinkengineering.co.zw',
+    icon: 'EnvelopeIcon',
+  },
+  {
+    label: 'Sales & Project Scoping',
+    email: 'sales@betterlinkengineering.co.zw',
+    icon: 'CurrencyDollarIcon',
+  },
+  {
+    label: 'Technical Support',
+    email: 'support@betterlinkengineering.co.zw',
+    icon: 'LifebuoyIcon',
+  },
 ];
 
 export default function ContactInfo() {

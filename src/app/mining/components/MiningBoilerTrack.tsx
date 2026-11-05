@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 
-const GALLERY_URL = 'https://boilertrack.lovable.app/gallery';
+const GALLERY_URL = '/gallery';
 const TRACKER_URL = 'https://boilertrack.lovable.app/tracker';
 
 const ArrowIcon = () => (
@@ -83,15 +84,13 @@ export default function MiningBoilerTrack() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
+              <Link
                 href={GALLERY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-[#E87B1E] text-white text-sm font-700 tracking-widest uppercase transition-all duration-200 hover:bg-[#D06A10] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(232,123,30,0.4)]"
               >
                 View Boiler Gallery
                 <ArrowIcon />
-              </a>
+              </Link>
               <a
                 href={TRACKER_URL}
                 target="_blank"
